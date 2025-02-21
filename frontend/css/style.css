@@ -44,12 +44,19 @@
         }
         ul {
             padding-left: 20px;
+            list-style: none;
         }
         li {
             margin-bottom: 10px;
-            border: 1px solid black;
             margin-right: 10%;
             padding: 3px;
+        }
+        li:hover, li:focus {
+            outline: 1px rgb(255, 240, 215);
+            background-color: rgb(255, 240, 215);
+            
+
+
         }
         .time {
             margin-left: 1.5rem;

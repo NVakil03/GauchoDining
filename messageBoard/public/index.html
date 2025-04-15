@@ -1,51 +1,45 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <title>Live Message Wall</title>
-    <style>
-        body {
-            font-family: sans-serif;
-            padding: 20px;
-        }
-
-        #messages {
-            list-style: none;
-            padding: 0;
-        }
-
-        #messages li {
-            margin: 5px 0;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Message Board</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    #messageForm {
+      margin-bottom: 20px;
+    }
+    #messageForm input, #messageForm textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+    #messagesList {
+      list-style: none;
+      padding: 0;
+    }
+    #messagesList li {
+      margin-bottom: 10px;
+      padding: 10px;
+      background-color: #f0f0f0;
+      border-radius: 5px;
+    }
+  </style>
 </head>
-
 <body>
-    <h1>📝 Message Wall</h1>
-    <ul id="messages"></ul>
-    <input id="messageInput" autocomplete="off" placeholder="Type your message..." />
-    <button onclick="sendMessage()">Send</button>
+  <h1>Message Board</h1>
 
-    <script src="/socket.io/socket.io.js"></script>
-    <script>
-        const socket = io();
-        const messages = document.getElementById('messages');
-        const input = document.getElementById('messageInput');
+  <form id="messageForm">
+    <input type="text" id="username" placeholder="Enter your username" required />
+    <textarea id="message" placeholder="Type your message" required></textarea>
+    <button type="submit">Send</button>
+  </form>
 
-        socket.on('message', msg => {
-            const li = document.createElement('li');
-            li.textContent = msg;
-            messages.appendChild(li);
-        });
+  <ul id="messagesList"></ul>
 
-        function sendMessage() {
-            const msg = input.value;
-            if (msg.trim()) {
-                socket.emit('message', msg);
-                input.value = '';
-            }
-        }
-    </script>
+  <script src="script.js"></script>
 </body>
-
 </html>

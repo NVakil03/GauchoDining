@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Live Message Wall</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            padding: 20px;
+        }
+
+        #messages {
+            list-style: none;
+            padding: 0;
+        }
+
+        #messages li {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>📝 Message Wall</h1>
+    <ul id="messages"></ul>
+    <input id="messageInput" autocomplete="off" placeholder="Type your message..." />
+    <button onclick="sendMessage()">Send</button>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+        const socket = io();
+        const messages = document.getElementById('messages');
+        const input = document.getElementById('messageInput');
+
+        socket.on('message', msg => {
+            const li = document.createElement('li');
+            li.textContent = msg;
+            messages.appendChild(li);
+        });
+
+        function sendMessage() {
+            const msg = input.value;
+            if (msg.trim()) {
+                socket.emit('message', msg);
+                input.value = '';
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,100 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="submitRating()"></button>
+</body>
+
+</html>
+
+<script type="module">
+    import { createClient } from '@supabase/supabase-js'
+
+    async function submitRating() {
+
+        const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Ind5cXRwb29nZ3lnaXZkcWZycnBrIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDUwMjE2OTksImV4cCI6MjA2MDU5NzY5OX0.1bdEUFYA6PNiWoCT8GEJZooux8Pwf-G9pmKpU--RLiE'
+
+
+        const supabaseUrl = 'https://wyqtpooggygivdqfrrpk.supabase.co'
+        const supabase = createClient(supabaseUrl, SUPABASE_KEY)
+
+        currentFood = "A";
+        rating = 3;
+        comment = "hi HI";
+        const now = new Date();
+
+        const { data, error } = await supabase
+            .from('reviews')
+            .insert([
+                {
+                    food: currentFood,
+                    rating: parseInt(rating),
+                    comment: comment,
+                    created_at: now.getDate(),
+                }
+            ])
+            .select()
+
+        if (error) {
+            console.error("Error submitting rating:", error);
+            alert("Submission failed.");
+        } else {
+            console.log("Submitted:", data);
+            alert("Rating submitted!");
+        }
+    }
+</script>
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Submit Rating</title>
+</head>
+
+<body>
+    <button onclick="submitRating()">Submit</button>
+
+
+    <script type="module">
+        const supabaseUrl = 'https://wyqtpooggygivdqfrrpk.supabase.co';
+        const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Ind5cXRwb29nZ3lnaXZkcWZycnBrIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDUwMjE2OTksImV4cCI6MjA2MDU5NzY5OX0.1bdEUFYA6PNiWoCT8GEJZooux8Pwf-G9pmKpU--RLiE'
+        const supabase = createClient(supabaseUrl, SUPABASE_KEY);
+
+        window.submitRating = async function () {
+            const currentFood = "A";
+            const rating = 3;
+            const comment = "hi HI";
+
+            const { data, error } = await supabase
+                .from('reviews')
+                .insert([
+                    {
+                        food: currentFood,
+                        rating: parseInt(rating),
+                        comment: comment,
+                    }
+                ])
+                .select();
+
+            if (error) {
+                console.error("Error submitting rating:", error);
+                alert("Submission failed.");
+            } else {
+                console.log("Submitted:", data);
+                alert("Rating submitted!");
+            }
+        }
+    </script>
+</body>
+
+</html>

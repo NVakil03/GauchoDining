@@ -5,6 +5,12 @@
     <meta charset="UTF-8">
     <title>UCSB Dining Menu</title>
     <style>
+        *,
+        html {
+            width: 80%;
+            margin: 0 auto;
+        }
+
         body {
             font-family: sans-serif;
             padding: 2rem;
@@ -13,15 +19,27 @@
         h1,
         h2 {
             color: #005aaa;
+            font-size: 2.2rem;
         }
 
         .station {
             margin-top: 1rem;
         }
 
+        ul {
+            list-style: none;
+        }
+
+        ul li {
+            padding: 15px;
+            font-weight: 500;
+        }
+
         ul li:hover,
         ul li:focus {
             background-color: beige;
+            font-weight: 900;
+
         }
 
         .menu {
@@ -31,6 +49,7 @@
         .selectCommon {
             padding: 10px;
             margin: 10px;
+            font-size: 2rem;
             background-color: rgb(246, 241, 183);
             border-radius: 30px;
         }
@@ -52,6 +71,7 @@
             padding: 20px;
             width: 300px;
             border-radius: 10px;
+
 
         }
     </style>
@@ -79,7 +99,7 @@
             <label for="comment">Comment:</label><br>
             <textarea id="comment" rows="4" cols="30"></textarea><br><br>
             <button onclick="submitRating()">Submit</button>
-            <div id="foodStats" style="margin-top: 1em; font-style: italic; display: block;"></div>
+            <div id="foodStats" style="margin-top: 1em; display: block;"></div>
         </div>
     </div>
 
@@ -184,12 +204,13 @@
             // Display
             let reviewsHtml = "";
             shuffledReviews.forEach(review => {
-                reviewsHtml += `<p>"${review.comment}" - ⭐${review.rating}</p>`;
+                reviewsHtml += `<p>"${review.comment}" - 💟 ${review.rating}</p>`;
             });
 
             // Display
             document.getElementById("foodStats").innerHTML = `
-        <p><strong>Average rating:</strong> ${avg} ⭐ (${reviews.length} reviews)</p>
+        <p>${avg} 💟 (${reviews.length} reviews)</p>
+        <br>
         <p><strong>Random Reviews:</strong></p>
         ${reviewsHtml}
     `;
@@ -229,6 +250,7 @@
             } else {
                 console.log("Submitted:", data);
                 alert("Rating submitted!");
+                loadFoodStats();
             }
 
             /* const supabaseUrl = 'https://wyqtpooggygivdqfrrpk.supabase.co';

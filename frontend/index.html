@@ -58,8 +58,9 @@
             padding: 10px;
             margin: 10px;
             font-size: 2rem;
-            background-color: rgb(246, 241, 183);
-            border-radius: 30px;
+            background-color: #003660;
+            border-radius: 10px;
+            color: aliceblue;
         }
 
         .modal {
@@ -90,7 +91,7 @@
 
         nav {
             position: fixed;
-            background-color: #005aaa;
+            background-color: #003660;
             top: 0;
             left: 0;
             width: 100%;
@@ -101,21 +102,37 @@
             margin-top: 10vh;
 
         }
+
+        .buttons {
+            display: flex;
+        }
+
+        .selectedloc {
+            display: flex;
+        }
     </style>
 </head>
 
 <body>
     <nav>
-        <h1>UCSB Dining Menu</h1>
+        <h1>Gaucho Dining</h1>
     </nav>
     <div class="top">
         <h2 id="meal-title"></h2>
     </div>
     <div id="Options">
         <p id="instruction">Please select a location</p>
-        <button class="selectCommon" onclick="setDiningCommon('portola', 'Portola')">Portola</button>
-        <button class="selectCommon" onclick="setDiningCommon('de-la-guerra', 'De La Guerra')">De La Guerra</button>
-        <button class="selectCommon" onclick="setDiningCommon('carrillo', 'Carrillo')">Carrillo</button>
+        <div class="buttons">
+            <button class="selectCommon" onclick="setDiningCommon('portola', 'Portola')">Portola</button>
+            <button class="selectCommon" onclick="setDiningCommon('de-la-guerra', 'De La Guerra')">De La Guerra</button>
+            <button class="selectCommon" onclick="setDiningCommon('carrillo', 'Carrillo')">Carrillo</button>
+        </div>
+    </div>
+    <div class="selectedloc">
+        <div class="selectedloc">
+            <div class="img"></div>
+            <iframe src="" frameborder="0" class="img" style="border-radius: 10px;"></iframe>
+        </div>
     </div>
     <div id="menu" class="menu"></div>
 
@@ -139,9 +156,28 @@
         let diningCommon;
         window.setDiningCommon = function (loc, name) {
             diningCommon = loc;
-            document.getElementById("instruction").innerHTML = name + " selected. Click on item for more info";
+            document.getElementById("instruction").innerHTML = name + " Selected. Click on Item for More Info.";
             fetchMenu();
-        }
+            const imgDiv = document.querySelector(".img");
+            const iframe = document.querySelector("iframe");
+
+            let imgSrc = "";
+            let mapSrc = "";
+
+            if (loc === 'portola') {
+                imgSrc = "img/portola.jpg";
+                mapSrc = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3291.3558132816443!2d-119.86968342412472!3d34.417716073021566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80e93f59b0ae06c1%3A0x83cae6e56c7e3737!2sPortola%20Dining%20Commons!5e0!3m2!1sen!2sus!4v1745551258995!5m2!1sen!2sus";
+            } else if (loc === 'de-la-guerra') {
+                imgSrc = "img/delaguerra.jpg";
+                mapSrc = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3291.678012010242!2d-119.84785772412508!3d34.40952917302456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80e93f72f5d402c3%3A0x7c78751d92f632bc!2sDe%20La%20Guerra%20Dining%20Commons!5e0!3m2!1sen!2sus!4v1745551677690!5m2!1sen!2sus";
+            } else if (loc === 'carrillo') {
+                imgSrc = "img/carrillo.jpg";
+                mapSrc = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3291.6614607664014!2d-119.85569692412508!3d34.4099497730243!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80e93f6bff47ea07%3A0x46b1087666350078!2sCarrillo%20Dining%20Commons!5e0!3m2!1sen!2sus!4v1745551377680!5m2!1sen!2sus";
+            }
+
+            imgDiv.innerHTML = `<img src="${imgSrc}" alt="${name}" style="max-width:100%; height:auto; border-radius: 10px;">`;
+            iframe.src = mapSrc;
+        };
         // Meal time logic
         function getCurrentMeal() {
             const dayOfWeek = new Date().getDay(); // 0 = Sunday, 6 = Saturday
@@ -189,7 +225,7 @@
             "Current time: " + now.toLocaleTimeString();
  */
 
-        document.getElementById("meal-title").innerHTML = getCurrentMeal() + "!";
+        document.getElementById("meal-title").innerHTML = getCurrentMeal() + " Menu";
 
 
         let currentFood = "";

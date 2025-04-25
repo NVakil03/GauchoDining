@@ -20,9 +20,13 @@
             padding: 2rem;
         }
 
-        h1,
+        h1 {
+            color: #fff;
+            font-size: 4rem;
+        }
+
         h2 {
-            color: #005aaa;
+            color: #000000;
             font-size: 4rem;
         }
 
@@ -83,13 +87,30 @@
         h3 {
             font-size: 2rem;
         }
+
+        nav {
+            position: fixed;
+            background-color: #005aaa;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 1.1rem;
+        }
+
+        .top {
+            margin-top: 10vh;
+
+        }
     </style>
 </head>
 
 <body>
-    <h1>UCSB Dining Menu</h1>
-    <p id="time"></p>
-    <h2 id="meal-title"></h2>
+    <nav>
+        <h1>UCSB Dining Menu</h1>
+    </nav>
+    <div class="top">
+        <h2 id="meal-title"></h2>
+    </div>
     <div id="Options">
         <p id="instruction">Please select a location</p>
         <button class="selectCommon" onclick="setDiningCommon('portola', 'Portola')">Portola</button>
@@ -135,14 +156,11 @@
         function WkDaygetMealTime() {
             const now = new Date();
             const hour = now.getHours();
-            const minute = now.getMinutes();
-            const totalMinutes = hour * 60 + minute;
-
-            if (totalMinutes >= 0 && totalMinutes <= 600) {
+            if (hour < 10) {
                 return "Breakfast"; // 12:00am - 10:00am
-            } else if (totalMinutes >= 660 && totalMinutes <= 900) {
+            } else if (hour < 15) {
                 return "Lunch"; // 11:00am - 3:00pm
-            } else if (totalMinutes > 900 && totalMinutes <= 1260) {
+            } else if (hour < 21) {
                 return "Dinner"; // 3:01pm - 9:00pm
             } else {
                 return "null"; // Outside meal times
@@ -152,11 +170,14 @@
         function WkndgetMealTime() {
             const now = new Date();
             const hour = now.getHours();
-
+            console.log(now)
             if (hour < 14) {
                 return "Brunch"; // 12:00am - 1:59pm
-            } else {
+            } else if (hour < 21) {
                 return "Dinner"; // 2:00pm and after
+            }
+            else {
+                return null;
             }
         }
 
@@ -262,38 +283,6 @@
                 loadFoodStats();
             }
 
-            /* const supabaseUrl = 'https://wyqtpooggygivdqfrrpk.supabase.co';
-            const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Ind5cXRwb29nZ3lnaXZkcWZycnBrIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDUwMjE2OTksImV4cCI6MjA2MDU5NzY5OX0.1bdEUFYA6PNiWoCT8GEJZooux8Pwf-G9pmKpU--RLiE';
-
-            const client = supabase.createClient(supabaseUrl, supabaseKey);
-
-            const rating = document.getElementById("rating").value;
-            const comment = document.getElementById("comment").value;
-
-            console.log({
-                food: currentFood,
-                rating: parseInt(rating),
-                comment: comment
-            })
-            const { data, error } = await client
-                .from('ratings')
-                .insert([
-                    {
-                        food: currentFood,
-                        rating: parseInt(rating),
-                        comment: comment,
-                        created_at: now.getDate(),
-                    }
-                ]);
-
-            if (error) {
-                console.error("Error submitting rating:", error);
-                alert("Submission failed.");
-            } else {
-                console.log("Submitted:", data);
-                alert("Rating submitted!");
-            } */
-
             console.log(currentFood, rating, comment);
 
 
@@ -306,19 +295,16 @@
             if (!diningCommon) return;
 
             const now = new Date();
-            const date = now.toISOString().split("T")[0];
-
-            const meal = getCurrentMeal(); // make sure you have this function
+            const date = now.toLocaleDateString('en-CA').split("T")[0];
+            const meal = getCurrentMeal();
 
             if (!meal) {
                 document.getElementById("menu").innerHTML = "No meal service right now.";
                 return;
             }
 
-
-
-
             const url = `https://api.ucsb.edu/dining/menu/v1/${date}/${diningCommon}/${meal}`;
+
 /*             const url = `https://api.ucsb.edu/dining/menu/v1/2025-04-18/portola/lunch`; //tester
  */            const headers = {
                 "accept": "application/json",

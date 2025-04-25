@@ -110,6 +110,26 @@
         .selectedloc {
             display: flex;
         }
+
+        #rating-buttons {
+            display: flex;
+            gap: 10px;
+        }
+
+        .rate-btn {
+            padding: 10px 15px;
+            font-size: 1.5rem;
+            border: 2px solid #003660;
+            background-color: white;
+            color: #003660;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .rate-btn.selected {
+            background-color: #003660;
+            color: rgb(255, 252, 171);
+        }
     </style>
 </head>
 
@@ -142,9 +162,18 @@
             <span id="closeModal" style="cursor:pointer;">&times;</span>
             <h3 id="foodTitle">Rate this food</h3>
             <label for="rating">Rating (1-5):</label>
-            <input type="number" id="rating" min="1" max="5"><br><br>
+            <div id="rating-buttons">
+                <button class="rate-btn" data-value="1">1</button>
+                <button class="rate-btn" data-value="2">2</button>
+                <button class="rate-btn" data-value="3">3</button>
+                <button class="rate-btn" data-value="4">4</button>
+                <button class="rate-btn" data-value="5">5</button>
+            </div>
+            <br><br>
             <label for="comment">Comment:</label><br>
             <textarea id="comment" rows="4" cols="30"></textarea><br><br>
+            <p class="message"></p><br>
+
             <button onclick="submitRating()">Submit</button>
             <div id="foodStats" style="margin-top: 1em; display: block;"></div>
         </div>
@@ -229,7 +258,8 @@
 
 
         let currentFood = "";
-
+        let selectedRating = null;
+        const rating = selectedRating;
         function foodWindow(foodName) {
             console.log(foodName);
             currentFood = foodName;
@@ -239,6 +269,11 @@
         }
 
         document.getElementById("closeModal").onclick = function () {
+            document.getElementById("comment").value = "";
+            document.querySelector(".message").textContent = "";
+            document.querySelectorAll('.rate-btn').forEach(b => b.classList.remove('selected'));
+            selectedRating = null;
+
             document.getElementById("ratingModal").style.display = "none";
         };
 
@@ -288,14 +323,14 @@
 
         window.submitRating = async function () {
 
-            const rating = document.getElementById("rating").value;
+            const rating = selectedRating;
             const comment = document.getElementById("comment").value;
             if (!rating || rating > 5 || rating < 1) {
-                alert("error");
+                showMessage("Please select a rating.", true);
             }
 
             if (!rating || !comment) {
-                alert("Please make sure both rating and comment are filled in.");
+                showMessage("Please make sure both rating and comment are filled in.");
                 return;
             }
 
@@ -312,18 +347,20 @@
 
             if (error) {
                 console.error("Error submitting rating:", error);
-                alert("Submission failed.");
+                messageBox("Submission failed.");
             } else {
                 console.log("Submitted:", data);
-                alert("Rating submitted!");
-                loadFoodStats();
+                showMessage("Rating submitted!");
+                loadFoodStats(currentFood);
+
             }
 
             console.log(currentFood, rating, comment);
 
 
-            document.getElementById("rating").value = "";
             document.getElementById("comment").value = "";
+            document.querySelectorAll('.rate-btn').forEach(b => b.classList.remove('selected'));
+            selectedRating = null;
         }
 
 
@@ -383,6 +420,23 @@
                 .catch(err => {
                     document.getElementById("menu").innerHTML = "Failed to load menu: " + err;
                 });
+
+
+            document.querySelectorAll('.rate-btn').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    // Deselect all buttons
+                    document.querySelectorAll('.rate-btn').forEach(b => b.classList.remove('selected'));
+
+                    // Select current button
+                    btn.classList.add('selected');
+                    selectedRating = parseInt(btn.dataset.value);
+                });
+            });
+        }
+        function showMessage(text, isError = false) {
+            const messageBox = document.querySelector(".message");
+            messageBox.textContent = text;
+            messageBox.style.color = isError ? "red" : "green";
         }
     </script>
 </body>

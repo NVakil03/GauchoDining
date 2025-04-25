@@ -255,9 +255,19 @@
         /* document.getElementById("time").textContent =
             "Current time: " + now.toLocaleTimeString();
  */
+        function getMMDDYYYY() {
+            const n = new Date();
+            let months = ["Jan", "Feb", "March", "Apr", "May", "June", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+            return months[now.getMonth()] + " " + now.getDate() + " " + now.getFullYear();
+        }
+        document.getElementById("meal-title").innerHTML = getMMDDYYYY() + " " + getCurrentMeal() + " Menu";
 
-        document.getElementById("meal-title").innerHTML = now.getMonth() + 1 + "-" + now.getDate() + "-" + now.getFullYear() + " " + getCurrentMeal() + " Menu";
+        function getTime() {
+            const n = new Date();
+            const ampm = n.getHours() >= 12 ? " pm" : " am";
+            return n.getHours() % 12 + ": " + n.getMinutes() + ampm
 
+        }
 
         let currentFood = "";
         let selectedRating = null;
@@ -342,7 +352,9 @@
                     {
                         food: currentFood,
                         rating: parseInt(rating),
-                        comment: comment
+                        comment: comment,
+                        day: getMMDDYYYY(),
+                        time: getTime()
                     }
                 ])
                 .select()

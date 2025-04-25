@@ -159,9 +159,9 @@
 
     <div id="ratingModal" style="display:none;" class="modal">
         <div class="modal-content">
-            <span id="closeModal" style="cursor:pointer;">&times;</span>
+            <span id="closeModal" style="cursor:pointer; font-size: 4rem;">&times;</span>
             <h3 id="foodTitle">Rate this food</h3>
-            <label for="rating">Rating (1-5):</label>
+            <label for="rating" style="padding: 20px; display: block;">Rating (1-5):</label>
             <div id="rating-buttons">
                 <button class="rate-btn" data-value="1">1</button>
                 <button class="rate-btn" data-value="2">2</button>
@@ -169,8 +169,8 @@
                 <button class="rate-btn" data-value="4">4</button>
                 <button class="rate-btn" data-value="5">5</button>
             </div>
-            <br><br>
-            <label for="comment">Comment:</label><br>
+
+            <label for="comment" style="padding: 20px; display: block;">Comment:</label><br>
             <textarea id="comment" rows="4" cols="30"></textarea><br><br>
             <p class="message"></p><br>
 
@@ -254,7 +254,7 @@
             "Current time: " + now.toLocaleTimeString();
  */
 
-        document.getElementById("meal-title").innerHTML = getCurrentMeal() + " Menu";
+        document.getElementById("meal-title").innerHTML = now.getMonth() + 1 + "-" + now.getDate() + "-" + now.getFullYear() + " " + getCurrentMeal() + " Menu";
 
 
         let currentFood = "";

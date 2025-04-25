@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Your Dashboard</title>
+   <style>
+       * {
+           margin: 0;
+           padding: 0;
+           box-sizing: border-box;
+       }
+
+       body {
+           font-family: Arial, sans-serif;
+           background-color: #f4f7fc;
+           height: 100vh;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           text-align: center;
+       }
+
+       .container {
+           background-color: white;
+           border-radius: 8px;
+           padding: 3rem;
+           width: 80%;
+           max-width: 600px;
+           box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+       }
+
+       h1 {
+           color: #2c3e50;
+           margin-bottom: 20px;
+       }
+
+       h2 {
+           color: #34495e;
+           margin-bottom: 20px;
+       }
+
+       .reviews-list {
+           list-style: none;
+           padding: 0;
+           margin-bottom: 20px;
+       }
+
+       .review-item {
+           background-color: #ecf0f1;
+           border-radius: 5px;
+           padding: 15px;
+           margin-bottom: 10px;
+       }
+
+       .review-item p {
+           margin: 0;
+           font-size: 1.2rem;
+       }
+
+       .review-item strong {
+           color: #2980b9;
+       }
+
+       .actions {
+           display: flex;
+           justify-content: space-between;
+           margin-top: 20px;
+       }
+
+       .back-home {
+           background-color: #3498db;
+           color: white;
+           text-decoration: none;
+           padding: 10px 20px;
+           border-radius: 5px;
+           font-size: 1.2rem;
+           transition: background-color 0.3s;
+       }
+
+       .back-home:hover {
+           background-color: #2980b9;
+       }
+
+       .logout-button {
+           background-color: #e74c3c;
+           color: white;
+           padding: 10px 20px;
+           border: none;
+           border-radius: 5px;
+           font-size: 1.2rem;
+           cursor: pointer;
+           transition: background-color 0.3s;
+       }
+
+       .logout-button:hover {
+           background-color: #c0392b;
+       }
+   </style>
+</head>
+<body>
+
+   <div class="container">
+       <h1>Welcome, {{ session['username'] }}!</h1>
+      
+       <h2>My Reviews</h2>
+      
+       {% if reviews %}
+           <ul class="reviews-list">
+               {% for review in reviews %}
+                   <li class="review-item">
+                       <p><strong>Review:</strong> {{ review.content }}</p>
+                   </li>
+               {% endfor %}
+           </ul>
+       {% else %}
+           <p>You have not posted any reviews yet.</p>
+       {% endif %}
+      
+       <div class="actions">
+           <a href="{{ url_for('home') }}" class="back-home">Back to Homepage</a>
+
+           <form action="{{ url_for('logout') }}" method="POST" style="display:inline;">
+               <button type="submit" class="logout-button">Logout</button>
+           </form>
+       </div>
+   </div>
+
+</body>
+</html>

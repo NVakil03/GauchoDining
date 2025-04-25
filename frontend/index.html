@@ -225,10 +225,10 @@
                 return "Breakfast"; // 12:00am - 10:00am
             } else if (hour < 15) {
                 return "Lunch"; // 11:00am - 3:00pm
-            } else if (hour < 21) {
+            } else if (hour < 24) {
                 return "Dinner"; // 3:01pm - 9:00pm
             } else {
-                return "null"; // Outside meal times
+                return "GO TO SLEEP~"; // Outside meal times
             }
         }
 
@@ -238,11 +238,11 @@
             console.log(now)
             if (hour < 14) {
                 return "Brunch"; // 12:00am - 1:59pm
-            } else if (hour < 21) {
+            } else if (hour < 24) {
                 return "Dinner"; // 2:00pm and after
             }
             else {
-                return null;
+                return "GO TO SLEEP~";
             }
         }
 

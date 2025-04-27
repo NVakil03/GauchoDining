@@ -22,7 +22,8 @@
 
         h1 {
             color: #fff;
-            font-size: 4rem;
+            font-size: 3rem;
+            margin-top: -5px;
         }
 
         h2 {
@@ -37,6 +38,8 @@
             left: 0;
             width: 100%;
             padding: 1.1rem;
+            display: flex;
+            height: 5vh;
         }
 
         .top {
@@ -82,6 +85,17 @@
             overflow: hidden;
         }
 
+        .navbtn {
+            display: block;
+            width: 30rem;
+            padding: .5rem;
+            margin-right: 2rem;
+            font-size: 1.5rem;
+            border-radius: 10px;
+            color: white;
+            background-color: #003660;
+        }
+
         .user-icon img {
             width: 100%;
             height: 100%;
@@ -97,19 +111,31 @@
             color: white;
             background-color: #003660;
         }
+
+        img {
+            width: 400px;
+            height: auto;
+        }
     </style>
 </head>
 
 <body>
     <nav>
         <h1>Gaucho Dining</h1>
-
+        <button id="login-btn" class="navbtn">Sign in with Google</button>
     </nav>
     <div class="top">
         <h2 id="meal-title"></h2>
     </div>
     <div id="Options">
-        <p id="instruction">Please log in</p> <br> <br>
+        <p id="instruction">Welcome to Gaucho Dining |BETA|</p>
+        <p>See the Dining Hall Menu...</p>
+        <img src="img/menu.png">
+        <p>Hear what others think...</p>
+        <img src="img/review.png">
+        <p>Leave your opinion!</p>
+        <img src="img/rating.png">
+        <p id="instruction">Log in to get Started!</p> <br> <br>
         <button id="login-btn">Sign in with Google</button>
     </div>
 

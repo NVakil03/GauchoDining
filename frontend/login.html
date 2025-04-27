@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+    <style>
+        *,
+        html {
+            width: 95%;
+            margin: 0 auto;
+        }
+
+        body {
+            font-family: sans-serif;
+            display: flex;
+            flex-direction: column;
+        }
+
+        h1 {
+            color: #fff;
+            font-size: 4rem;
+        }
+
+        h2 {
+            color: #000000;
+            font-size: 4rem;
+        }
+
+        nav {
+            position: fixed;
+            background-color: #003660;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 1.1rem;
+        }
+
+        .top {
+            margin: 20vh auto;
+        }
+
+        .top h1 {
+            color: black;
+            display: block;
+
+        }
+
+        button {
+            display: block;
+            width: 30rem;
+            padding: 2rem;
+            font-size: 2rem;
+            border-radius: 10px;
+            color: white;
+            background-color: #003660;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <h1>Gaucho Dining</h1>
+    </nav>
+    <div class="top">
+        <h1>Login with Google</h1>
+    </div>
+    <button id="login-btn">Sign in with Google</button>
+
+    <script type="module">
+        // Importing supabase client
+        import { createClient } from 'https://cdn.jsdelivr.net/npm/@supabase/supabase-js/+esm';
+
+        // Define your Supabase credentials
+        const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Ind5cXRwb29nZ3lnaXZkcWZycnBrIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDUwMjE2OTksImV4cCI6MjA2MDU5NzY5OX0.1bdEUFYA6PNiWoCT8GEJZooux8Pwf-G9pmKpU--RLiE'
+        const supabaseUrl = 'https://wyqtpooggygivdqfrrpk.supabase.co'
+        const supabase = createClient(supabaseUrl, SUPABASE_KEY);
+
+
+        // Global login function
+        async function login() {
+            const { data, error } = await supabase.auth.signInWithOAuth({
+                provider: 'google',
+                options: {
+                    redirectTo: 'https://gaucho-dining.vercel.app/', // Full URL to redirect after login
+                }
+            })
+
+
+            if (error) {
+                alert('Login failed: ' + error.message);
+            } else {
+                console.log(data); // You can log user info here, or redirect to another page
+            }
+        }
+
+        // Add event listener for the login button
+        document.getElementById('login-btn').addEventListener('click', login);
+
+        // Optional: auto-redirect if already logged in
+        supabase.auth.getSession().then(({ data: { session } }) => {
+            if (session) {
+                window.location.href = "https://gaucho-dining.vercel.app/"; // Or any URL you want to redirect to
+            }
+        });
+    </script>
+</body>
+
+</html>

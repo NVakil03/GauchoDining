@@ -132,12 +132,31 @@
             background-color: #003660;
             color: rgb(255, 252, 171);
         }
+
+        .user-icon {
+            position: fixed;
+            top: 1rem;
+            right: 1rem;
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+
+        .user-icon img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
     </style>
 </head>
 
 <body>
     <nav>
         <h1>Gaucho Dining</h1>
+        <div id="user-icon" class="user-icon">
+            <img id="user-avatar" src="" alt="User Avatar" />
+        </div>
     </nav>
     <div class="top">
         <h2 id="meal-title"></h2>
@@ -183,7 +202,34 @@
 
     <script type="module">
         import { createClient } from 'https://cdn.jsdelivr.net/npm/@supabase/supabase-js/+esm'
-        //location logic
+
+
+
+        const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Ind5cXRwb29nZ3lnaXZkcWZycnBrIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDUwMjE2OTksImV4cCI6MjA2MDU5NzY5OX0.1bdEUFYA6PNiWoCT8GEJZooux8Pwf-G9pmKpU--RLiE'
+        const supabaseUrl = 'https://wyqtpooggygivdqfrrpk.supabase.co'
+        const supabase = createClient(supabaseUrl, SUPABASE_KEY);
+
+
+        const { data: { user }, error } = await supabase.auth.getUser();
+        if (user) {
+            console.log('Logged in user ID:', user.id);
+            const userAvatar = user.user_metadata.avatar_url; // Assuming avatar_url is saved in the metadata
+            displayUserAvatar(userAvatar); // Display the avatar in the top-right corner
+        } else {
+            console.log('No user logged in:', error);
+            window.location.href = 'login.html'; // Redirect to login if no user is logged in
+        }
+
+
+        function displayUserAvatar(avatarUrl) {
+            const avatarImg = document.getElementById('user-avatar');
+            if (avatarUrl) {
+                avatarImg.src = avatarUrl; // Set the avatar image source
+            } else {
+                avatarImg.src = 'default-avatar.png'; // Fallback image
+            }
+        }
+
         let diningCommon;
         window.setDiningCommon = function (loc, name) {
             diningCommon = loc;
@@ -329,9 +375,6 @@
     `;
         };
 
-        const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Ind5cXRwb29nZ3lnaXZkcWZycnBrIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDUwMjE2OTksImV4cCI6MjA2MDU5NzY5OX0.1bdEUFYA6PNiWoCT8GEJZooux8Pwf-G9pmKpU--RLiE'
-        const supabaseUrl = 'https://wyqtpooggygivdqfrrpk.supabase.co'
-        const supabase = createClient(supabaseUrl, SUPABASE_KEY);
 
         window.submitRating = async function () {
 
@@ -354,7 +397,8 @@
                         rating: parseInt(rating),
                         comment: comment,
                         day: getMMDDYYYY(),
-                        time: getTime()
+                        time: getTime(),
+                        user_id: user.id
                     }
                 ])
                 .select()

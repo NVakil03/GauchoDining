@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>UCSB Dining Menu</title>
+    <style>
+        *,
+        html {
+            width: 95%;
+            margin: 0 auto;
+        }
+
+        #Options p {
+            font-size: 3rem;
+        }
+
+        body {
+            font-family: sans-serif;
+            padding: 2rem;
+        }
+
+        h1 {
+            color: #fff;
+            font-size: 4rem;
+        }
+
+        h2 {
+            color: #000000;
+            font-size: 4rem;
+        }
+
+        .station {
+            margin-top: 1rem;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        ul li {
+            padding: 15px;
+            font-weight: 500;
+            outline: 3px solid gray;
+            margin: 5px;
+        }
+
+        ul li:hover,
+        ul li:focus {
+            background-color: beige;
+            font-weight: 900;
+
+        }
+
+        .menu {
+            display: block;
+        }
+
+        .selectCommon {
+            padding: 10px;
+            margin: 10px;
+            font-size: 2rem;
+            background-color: #003660;
+            border-radius: 10px;
+            color: aliceblue;
+        }
+
+        .modal {
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+
+        .modal-content {
+            background-color: white;
+            margin: 15% auto;
+            padding: 20px;
+            width: 80%;
+            border-radius: 10px;
+        }
+
+        .modal-content p,
+        label,
+        button,
+        h3 {
+            font-size: 2rem;
+        }
+
+        nav {
+            position: fixed;
+            background-color: #003660;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 1.1rem;
+        }
+
+        .top {
+            margin-top: 10vh;
+
+        }
+
+        .buttons {
+            display: flex;
+        }
+
+        .selectedloc {
+            display: flex;
+        }
+
+        #rating-buttons {
+            display: flex;
+            gap: 10px;
+        }
+
+        .rate-btn {
+            padding: 10px 15px;
+            font-size: 1.5rem;
+            border: 2px solid #003660;
+            background-color: white;
+            color: #003660;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .rate-btn.selected {
+            background-color: #003660;
+            color: rgb(255, 252, 171);
+        }
+
+        .user-icon {
+            position: fixed;
+            top: 1rem;
+            right: 1rem;
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+
+        .user-icon img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        button {
+            display: block;
+            width: 30rem;
+            padding: 2rem;
+            font-size: 2rem;
+            border-radius: 10px;
+            color: white;
+            background-color: #003660;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <h1>Gaucho Dining</h1>
+
+    </nav>
+    <div class="top">
+        <h2 id="meal-title"></h2>
+    </div>
+    <div id="Options">
+        <p id="instruction">Please log in</p> <br> <br>
+        <button id="login-btn">Sign in with Google</button>
+    </div>
+
+    <div id="menu" class="menu"></div>
+    </div>
+</body>
+
+<script type="module">
+    // Importing supabase client
+    import { createClient } from 'https://cdn.jsdelivr.net/npm/@supabase/supabase-js/+esm';
+
+    // Define your Supabase credentials
+    const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Ind5cXRwb29nZ3lnaXZkcWZycnBrIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDUwMjE2OTksImV4cCI6MjA2MDU5NzY5OX0.1bdEUFYA6PNiWoCT8GEJZooux8Pwf-G9pmKpU--RLiE'
+    const supabaseUrl = 'https://wyqtpooggygivdqfrrpk.supabase.co'
+    const supabase = createClient(supabaseUrl, SUPABASE_KEY);
+
+
+    // Global login function
+    async function login() {
+        const { data, error } = await supabase.auth.signInWithOAuth({
+            provider: 'google',
+            options: {
+                redirectTo: 'https://gaucho-dining.vercel.app/', // Full URL to redirect after login
+            }
+        })
+
+
+        if (error) {
+            alert('Login failed: ' + error.message);
+        } else {
+            console.log(data); // You can log user info here, or redirect to another page
+        }
+    }
+
+    // Add event listener for the login button
+    document.getElementById('login-btn').addEventListener('click', login);
+
+    // Optional: auto-redirect if already logged in
+    supabase.auth.getSession().then(({ data: { session } }) => {
+        if (session) {
+            window.location.href = "https://gaucho-dining.vercel.app/"; // Or any URL you want to redirect to
+        }
+    });
+</script>
+</body>
+
+</html>

@@ -363,12 +363,12 @@
             // Display
             let reviewsHtml = "";
             shuffledReviews.forEach(review => {
-                reviewsHtml += `<p> ${review.day} ${review.time}            "${review.comment}" - ❤︎(${review.rating})</p>`;
+                reviewsHtml += `<p> $"${review.day} ${review.comment}" - ❤︎(${review.rating})</p>`; //{review.day} ${review.time}           
             });
 
             // Display
             document.getElementById("foodStats").innerHTML = `
-        <p>${avg} 💟 (${reviews.length} reviews)</p>
+        <p>${avg} ❤︎ (${reviews.length} reviews)</p>
         <br>
         <p><strong>Random Reviews:</strong></p>
         ${reviewsHtml}

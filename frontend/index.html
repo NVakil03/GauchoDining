@@ -363,7 +363,7 @@
             // Display
             let reviewsHtml = "";
             shuffledReviews.forEach(review => {
-                reviewsHtml += `<p>${review.comment} - ❤︎(${review.rating}) ☀︎[${review.day} ${review.time}]</p>`;
+                reviewsHtml += `<p> ${review.day} ${review.time} "${review.comment}" - ❤︎(${review.rating})</p>`;
             });
 
             // Display

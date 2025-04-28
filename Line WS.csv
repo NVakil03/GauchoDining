@@ -1,0 +1,583 @@
+Food Item,Day,Meal,Serving Location,Portion,Forecast,Prepared,Leftover,Served,When the food ran out,Any Distinctions?,How much food was wasted (%),Forecast vs. Prepared
+7 Grain Hot Cereal,4/17/25,Breakfast,West Side (Cafe),1/2 Cup,30,30,0,30,,VGN,0,
+7-Grain Hot Cereal,3/18/25,Breakfast,West Side (Cafe),1/2 Cup,40,40,0,40,,VGN,0,1
+Alburro Sauce,3/14/25,Lunch,Order Up,1 Oz Ladle,160,160,2,158,,VGT,0.0125,1
+Apple Crisp,2/24/25,Dinner,Bakery,Piece,450,490,0,490,,VGT,0,1.088888889
+Arroz Con Leche,1/7/25,Breakfast,West Side (Cafe),1/2 Cup,70,70,,70,,,0,1
+Asian Beef Lettuce Wrap,3/18/25,Lunch,Blue Plate Special,Wrap,400,450,0,450,,,0,1.125
+Asian Beef Lettuce Wrap,3/31/25,Lunch,Blue Plate Special,Wrap,450,450,0,450,,,0,1
+Assorted Bagels,1/6/25,Breakfast,Bakery,Bagel,120,108,13,95,,VGT,0.1203703704,0.9
+Assorted Bagels,2/22/25,Brunch,Bakery,Bagel,324,288,0,288,,VGT,0,0.8888888889
+Assorted Bagels,2/23/25,Brunch,Bakery,Bagel,252,250,0,250,13:20,VGT,0,0.9920634921
+Assorted Bagels,3/8/25,Brunch,Bakery,Bagel,276,260,10,250,,VGT,0.03846153846,0.9420289855
+Assorted Bagels,3/9/25,Brunch,Bakery,Bagel,276,280,60,220,,VGT,0.2142857143,1.014492754
+Assorted Bagels,3/15/25,Breakfast,Bakery,Bagel,12,12,0,12,,,0,1
+Assorted Bagels,3/19/25,Breakfast,Bakery,Bagel,84,150,0,150,,VGN,0,1.785714286
+Assorted Bagels,3/31/25,Breakfast,Bakery,Bagel,120,120,10,110,,,0.08333333333,1
+Assorted Bell Pepper Pizza,2/23/25,Dinner,Pizza,Slice,216,180,0,180,,VGT,0,0.8333333333
+Assorted Meat Pizza,3/9/25,Brunch,Pizza,Slice,276,228,6,222,,,0.02631578947,0.8260869565
+Avocado Salsa,4/16/25,Dinner,East Side (Taqueria),1 Oz Ladle,192,192,0,192,,VGN,0,1
+Baked Ono With Garlic & Herb,3/18/25,Dinner,Blue Plate Special,4 Oz,630,630,0,630,,,0,1
+Baked Potato,1/6/25,Dinner,Blue Plate Special,Potato,30,40,0,40,,VGN,0,1.333333333
+Baked Potato,1/6/25,Lunch,Blue Plate Special,Potato,12,15,0,15,,VGN,0,1.25
+Baked Potato,2/22/25,Brunch,Blue Plate Special,Potato,7,7,0,7,,VGN,0,1
+Baked Potato,2/23/25,Brunch,Blue Plate Special,Potato,8,14,5,9,,,0.3571428571,1.75
+Baked Potato,2/25/25,Dinner,Blue Plate Special,Potato,30,38,3,35,,VGN,0.07894736842,1.266666667
+Baked Potato,3/5/25,Lunch,Blue Plate Special,Potato,10,15,3,12,,VGN,0.2,1.5
+Baked Potato,3/8/25,Dinner,Blue Plate Special,Potato,25,25,5,20,8:45 PM,VGN,0.2,1
+Baked Potato,3/9/25,Brunch,Blue Plate Special,Potato,8,15,0,15,,VGN,0,1.875
+Baked Potato,3/9/25,Dinner,Blue Plate Special,Potato,30,30,0,30,8:30 PM,VGN,0,1
+Baked Potato,3/14/25,Lunch,Blue Plate Special,Potato,8,15,2,13,,VGN,0.1333333333,1.875
+Baked Potato,3/14/25,Dinner,Blue Plate Special,Potato,25,35,4,31,,VGN,0.1142857143,1.4
+Baked Potato,3/16/25,Dinner,Blue Plate Special,Potato,30,30,0,30,,VGN,0,1
+Baked Potato,3/17/25,Lunch,Blue Plate Special,Potato,15,15,0,15,,VGN,0,1
+Baked Potato,3/17/25,Dinner,Blue Plate Special,Potato,25,35,4,31,,VGN,0.1142857143,1.4
+Baked Potato,3/18/25,Lunch,Blue Plate Special,Potato,8,8,1,7,,VGN,0.125,1
+Baked Potato,3/18/25,Dinner,Blue Plate Special,Potato,25,35,2,33,,VGN,0.05714285714,1.4
+Baked Potato,3/31/25,Lunch,Blue Plate Special,1/2 Cup,8,15,0,15,,VGN,0,1.875
+Baked Potato,4/16/25,Dinner,Blue Plate Special,Potato,30,30,2,28,,VGN,0.06666666667,
+Baked Potato,4/17/25,Lunch,Blue Plate Special,Potato,8,12,1,11,,VGN,0.08333333333,
+Baked Potato ,3/15/25,Dinner,Blue Plate Special,Potato,30,30,0,30,8:45 PM,VGN,0,1
+Baked Sweet Potato,1/6/25,Lunch,Blue Plate Special,4 Oz,40,50,0,50,,VGN,0,1.25
+Baked Sweet Potato,1/6/25,Dinner,Blue Plate Special,4 Oz,50,65,,65,,VGN,0,1.3
+Baked Sweet Potato,3/5/25,Lunch,Blue Plate Special,4 Oz,35,40,5,35,,VGN,0.125,1.142857143
+Baked Sweet Potato,3/14/25,Lunch,Blue Plate Special,4 Oz,25,35,0,35,,VGN,0,1.4
+Baked Sweet Potato,3/14/25,Dinner,Blue Plate Special,4 Oz,40,50,0,50,,VGN,0,1.25
+Baked Sweet Potato,3/17/25,Lunch,Blue Plate Special,4 Oz,50,50,0,50,,VGN,0,1
+Baked Sweet Potato,3/17/25,Dinner,Blue Plate Special,4 Oz,50,60,5,55,,VGN,0.08333333333,1.2
+Baked Sweet Potato,3/31/25,Lunch,Blue Plate Special,4 Oz,25,45,0,45,,VGN,0,1.8
+Baked Sweet Potato,4/16/25,Dinner,Blue Plate Special,4 oz,50,50,5,45,,VGN,0.1,
+Banana Chocolate Chip Bar,3/18/25,Lunch,Bakery,Bar,480,560,100,460,,"VGN, Nuts",0.1785714286,1.166666667
+Basmati Rice,2/25/25,Dinner,Order Up,1/2 Cup,64,50,2,48,,VGN,0.04,0.78125
+BBQ Chicken Pizza,3/7/25,Lunch,Pizza,Slice,624,45,5,40,8:00 PM,,0.1111111111,0.07211538462
+BBQ Chicken Pizza,3/8/25,Brunch,Pizza,Slice,72,72,0,72,,,0,1
+Bean & Cheese Nachos,3/14/25,Lunch,East Side (Taqueria),Boat,320,300,0,300,,VGT,0,0.9375
+Bean & Cheese Sope,3/15/25,Dinner,East Side (Taqueria),Sope,180,180,0,180,,VGT,0,1
+Bean & Rice Tostada,1/5/25,Dinner,East Side (Taqueria),Unit,40,50,0,50,,VGN,0,1.25
+Bean and Rice Burrito,1/6/25,Dinner,East Side (Taqueria),Burrito,220,220,,220,,VGN,0,1
+Bean and Rice Burrito,3/17/25,Lunch,East Side (Taqueria),Burrito,150,130,20,110,,VGN,0.1538461538,0.8666666667
+Beef Birria,3/18/25,Lunch,East Side (Taqueria),4 Oz,620,700,0,700,1:30 PM,,0,1.129032258
+Beef Fajita,4/16/25,Dinner,East Side (Taqueria),Fajita,750,800,100,700,,,0.125,1.066666667
+Beef Hard Shell Taco,3/14/25,Dinner,East Side (Taqueria),Taco,675,675,0,675,,,0,1
+Beef Tacos,2/25/25,Dinner,East Side (Taqueria),Taco,40,40,0,40,,,0,1
+Black Bean Burger,2/18/25,Lunch,West Side (Cafe),Burger,48,48,18,30,,VGN,0.375,1
+Black Bean Burger,3/5/25,Lunch,West Side (Cafe),Burger,36,36,0,36,,VGN,0,1
+Black Bean Burger,3/18/25,Lunch,West Side (Cafe),Burger,24,24,0,24,,VGN,0,1
+Black Bean Burger,3/31/25,Lunch,West Side (Cafe),Burger,24,24,0,24,,VGN,0,1
+Black Bean Salad,3/2/25,Dinner,Salads/Deli,1/2 Cup,110,100,0,100,,VGN,0,0.9090909091
+Black Bean Salsa,3/15/25,Dinner,East Side (Taqueria),2 Oz Ladle,256,160,0,160,,VGN,0,0.625
+Black Bean Tostada,1/7/25,Lunch,East Side (Taqueria),Tostada,80,80,,80,,VGN,0,1
+Black Bean Tostada,3/9/25,Dinner,East Side (Taqueria),Tostada,90,90,0,90,,VGN,0,1
+Black Bean Tostada,3/18/25,Lunch,East Side (Taqueria),Tostada,40,40,0,40,,VGN,0,1
+Black Beans,1/7/25,Lunch,East Side (Taqueria),1/2 Cup,320,300,50,250,,VGN,0.1666666667,0.9375
+Black Beans,3/9/25,Dinner,East Side (Taqueria),1/2 Cup,320,320,0,320,,VGN,0,1
+Black Beans,3/18/25,Lunch,East Side (Taqueria),1/2 Cup,160,200,50,150,,VGN,0.25,1.25
+Black Olive Pizza on Wheat,3/6/25,Lunch,Pizza,Slice,216,18,2,16,5,VGT,0.1111111111,0.08333333333
+Blueberry Pancake,1/7/25,Breakfast,West Side (Cafe),Pancake,380,380,,380,,,0,1
+Bok Choy with Garlic & Ginger,3/8/25,Dinner,Blue Plate Special,2.5 Oz,350,350,0,350,8:00 PM,VGN,0,1
+Bok Choy with Garlic & Ginger,3/31/25,Lunch,Blue Plate Special,1/2 Cup,200,100,0,100,,VGN,0,0.5
+Brown Rice,1/5/25,Dinner,Order Up,1/2 Cup,16,16,6,10,,VGN,0.375,1
+Brown Rice,2/22/25,Dinner,Order Up,1/2 Cup,16,16,5,11,,VGN,0.3125,1
+Brown Rice,2/25/25,Lunch,Order Up,1/2 Cup,32,32,2,30,,VGN,0.0625,1
+Brown Rice,2/25/25,Dinner,Order Up,1/2 Cup,16,16,3,13,,VGN,0.1875,1
+Brown Rice,3/8/25,Dinner,Order Up,1/2 Cup,32,16,3,13,,VGN,0.1875,0.5
+Brown Rice,3/9/25,Dinner,Order Up,1/2 Cup,32,16,3,13,,VGN,0.1875,0.5
+Brown Rice,3/14/25,Dinner,Order Up,1/2 Cup,32,16,4,12,,VGN,0.25,0.5
+Brown Rice,3/15/25,Dinner,Order Up,1/2 Cup,15,16,3,13,,VGN,0.1875,1.066666667
+Brown Rice,3/17/25,Dinner,Order Up,1/2 Cup,32,16,4,12,,VGN,0.25,0.5
+Brown Rice,3/18/25,Dinner,Order Up,1/2 Cup,16,16,3,13,,VGN,0.1875,1
+Brown Rice,3/18/25,Lunch,Order Up,1/2 Cup,32,32,10,22,,VGN,0.3125,1
+Brownie & Walnut Pie,2/22/25,Dinner,Bakery,Slice,520,520,0,520,,"VGT, Nuts",0,1
+Cage Free Scrambled Egg Whites,1/6/25,Breakfast,West Side (Cafe),1/2 Cup,50,100,0,100,,VGT,0,2
+Cage Free Scrambled Egg Whites,1/7/25,Breakfast,West Side (Cafe),1/2 Cup,40,60,,60,,,0,1.5
+Cage Free Scrambled Egg Whites,2/23/25,Brunch,West Side (Cafe),1/2 Cup,70,70,0,70,,,0,1
+Cage Free Scrambled Egg Whites,3/9/25,Brunch,West Side (Cafe),1/2 Cup,50,100,0,100,,VGT,0,2
+Cage Free Scrambled Egg Whites,3/17/25,Breakfast,West Side (Cafe),1/2 Cup,60,80,0,80,,VGT,0,1.333333333
+Cage Free Scrambled Egg Whites,3/18/25,Breakfast,West Side (Cafe),1/2 Cup,30,60,0,60,,VGT,0,2
+Cage Free Scrambled Egg Whites,4/17/25,Breakfast,West Side (Cafe),1/2 Cup,45,45,0,45,,VGT,0,
+Cage Free Scrambled Eggs,1/6/25,Breakfast,West Side (Cafe),1/2 Cup,440,440,0,440,,VGT,0,1
+Cage Free Scrambled Eggs,1/7/25,Breakfast,West Side (Cafe),1/2 Cup,420,420,,420,,,0,1
+Cage Free Scrambled Eggs,2/23/25,Brunch,West Side (Cafe),1/2 Cup,850,850,0,850,,,0,1
+Cage Free Scrambled Eggs,3/9/25,Brunch,West Side (Cafe),1/2 Cup,900,900,0,900,,VGT,0,1
+Cage Free Scrambled Eggs,3/17/25,Breakfast,West Side (Cafe),1/2 Cup,200,200,0,200,,VGT,0,1
+Cage Free Scrambled Eggs,3/18/25,Breakfast,West Side (Cafe),1/2 Cup,400,400,0,400,,VGT,0,1
+Cage Free Scrambled Eggs,4/17/25,Breakfast,West Side (Cafe),1/2 Cup,260,260,0,260,,VGT,0,
+Cage Free Scrambled Eggs with Cheese,3/17/25,Breakfast,West Side (Cafe),1/2 Cup,200,200,0,200,,VGT,0,1
+Caluiflower & Red Bell Pepper,3/5/25,Lunch,Blue Plate Special,1/2 Cup,180,180,40,140,,VGN,0.2222222222,1
+Canadian Bacon Pizza,3/14/25,Dinner,Pizza,Slice,300,492,60,432,,,0.1219512195,1.64
+Caponata Salad,1/6/25,Lunch,Salads/Deli,1/2 Cup,260,240,0,240,,VGN,0,0.9230769231
+Caponata Salad,3/3/25,Lunch,Salads/Deli,1/2 Cup,220,220,0,220,,VGN,0,1
+Carrot Cake with Cream Cheese,3/18/25,Dinner,Bakery,Slice,268,268,0,268,,"VGN, Nuts",0,1
+Carrots & Broccoli,3/14/25,Lunch,Blue Plate Special,1/2 Cup,140,60,0,60,,VGN,0,0.4285714286
+Carrots with Tarragon,3/17/25,Dinner,Blue Plate Special,1/2 Cup,470,470,70,400,,VGN,0.1489361702,1
+Cashew Tofu Stir Fry,3/18/25,Dinner,Order Up,Cup,140,180,4,176,,"VGN, Nuts",0.02222222222,1.285714286
+Cauliflower & Broccoli,3/9/25,Brunch,Blue Plate Special,1/2 Cup,120,100,0,100,,VGN,0,0.8333333333
+Char Burger,1/6/25,Lunch,West Side (Cafe),Burger,708,1050,0,1050,,,0,1.483050847
+Char Burger,2/18/25,Lunch,West Side (Cafe),Burger,816,1000,0,1000,,,0,1.225490196
+Char Burger,3/5/25,Lunch,West Side (Cafe),Burger,744,1250,0,1250,,,0,1.680107527
+Char Burger,3/17/25,Lunch,West Side (Cafe),Burger,696,1050,0,1050,,,0,1.50862069
+Char Burger,3/18/25,Lunch,West Side (Cafe),Burger,600,800,0,800,,,0,1.333333333
+Char Burger,3/31/25,Lunch,West Side (Cafe),Burger,696,1150,0,1150,,,0,1.652298851
+Char Burger,4/17/25,Lunch,West Side (Cafe),Burger,0,40,0,40,,,0,
+Char Grilled Pork Chop,3/16/25,Dinner,Blue Plate Special,3 Oz,"1,070","1,070",0,1070,,,0,1
+Cheese Pizza,1/6/25,Dinner,Pizza,Slice,372,360,0,360,,VGT,0,0.9677419355
+Cheese Pizza,1/6/25,Lunch,Pizza,Slice,372,264,12,252,,VGT,0.04545454545,0.7096774194
+Cheese Pizza,3/17/25,Dinner,Pizza,Slice,264,324,0,324,,VGT,0,1.227272727
+Cheese Pizza,3/17/25,Lunch,Pizza,Slice,408,25,0,25,,VGT,0,0.0612745098
+Cheese Pizza on Wheat Crust,2/22/25,Dinner,Pizza,Slice,276,216,0,216,,VGT,0,0.7826086957
+Cheese Pizza on Wheat Crust,3/8/25,Dinner,Pizza,Slice,252,240,0,240,,VGT,0,0.9523809524
+Cheese Pizza on Wheat Crust,3/8/25,Brunch,Pizza,Slice,240,216,6,210,,VGT,0.02777777778,0.9
+Cheese Ravioli with Marinara,2/25/25,Lunch,Order Up,3/4 Cup,670,670,10,660,,,0.01492537313,1
+Cheese Roll,3/18/25,Lunch,Bakery,Roll,96,98,20,78,,VGT,0.2040816327,1.020833333
+Cherry Cobbler,2/21/25,Dinner,Bakery,Piece,225,270,100,170,,VGN,0.3703703704,1.2
+Chicken & Vegetable Stir Fry,1/5/25,Dinner,Order Up,Cup,680,680,4,676,,,0.005882352941,1
+Chicken and Black Bean Burrito,1/7/25,Lunch,East Side (Taqueria),Burrito,480,450,0,450,,,0,0.9375
+Chicken and Rice Tostada,3/15/25,Dinner,East Side (Taqueria),Tostada,750,900,0,900,,,0,1.2
+Chicken and Rice Tostada,3/31/25,Lunch,East Side (Taqueria),Tostada ,440,440,0,440,,,0,1
+Chicken Bean & Rice Burrito,3/8/25,Dinner,East Side (Taqueria),Burrito,550,650,50,600,,,0.07692307692,1.181818182
+Chicken Brown Rice Soup,3/9/25,Brunch,Blue Plate Special,6 Oz Ladle,70,300,0,300,,,0,4.285714286
+Chicken Madeira,4/16/25,Dinner,Blue Plate Special,Breast,880,880,160,720,,,0.1818181818,
+Chicken Madras,2/25/25,Dinner,Order Up,6 Oz Ladle,600,1408,0,1408,8:20 PM,,0,2.346666667
+Chicken Marinara,3/17/25,Dinner,Order Up,3 Oz Ladle,700,700,4,696,,,0.005714285714,1
+Chicken Philly Sandwich,2/22/25,Brunch,Blue Plate Special,Sandwich,342,370,0,370,,,0,1.081871345
+Chicken Rice Soup,2/23/25,Brunch,Blue Plate Special,6 Oz Ladle,80,596,146,450,,,0.244966443,7.45
+Chicken Sausage Patty,2/23/25,Brunch,West Side (Cafe),Patty,780,780,0,780,,,0,1
+Chicken Sausage Patty,3/17/25,Breakfast,West Side (Cafe),Patty,350,350,0,350,,,0,1
+Chicken Soft Taco,3/9/25,Dinner,East Side (Taqueria),Taco,900,900,0,900,,,0,1
+Chicken Soft Taco,3/17/25,Dinner,East Side (Taqueria),Taco,1200,1200,0,1200,,,0,1
+Chicken Sope,1/6/25,Dinner,East Side (Taqueria),Sope,504,504,20,484,,,0.03968253968,1
+Chicken Vegetable Soup,4/16/25,Dinner,Blue Plate Special,6 Oz Ladle,180,180,80,100,,,0.4444444444,
+Chocolate Chip Banana Bread,3/9/25,Brunch,Bakery,Slice,400,400,60,340,,VGT,0.15,1
+Chocolate Chip Cake,1/6/25,Dinner,Bakery,Slice,632,585,209,376,,VGT,0.3572649573,0.9256329114
+Chocolate Chip Scone,2/26/25,Breakfast,Bakery,Unit,120,160,0,160,,VGN,0,1.333333333
+Chorizo Pizza,2/22/25,Dinner,Pizza,Slice,360,312,28,284,,,0.08974358974,0.8666666667
+Congo Bar,1/6/25,Lunch,Bakery,Bar,400,400,200,200,,VGT,0.5,1
+Corn,2/22/25,Brunch,Blue Plate Special,1/2 Cup,140,20,0,20,,VGN,0,0.1428571429
+Corn Tortilla,1/5/25,Dinner,East Side (Taqueria),Tortilla,12,30,0,30,,VGN,0,2.5
+Corn Tortilla,1/6/25,Dinner,East Side (Taqueria),Tortilla,24,24,,24,,VGN,0,1
+Corn Tortilla,1/7/25,Lunch,East Side (Taqueria),Tortilla,24,36,,36,,VGN,0,1.5
+Corn Tortilla,2/25/25,Dinner,East Side (Taqueria),Tortilla,72,72,0,72,,VGN,0,1
+Corn Tortilla,3/8/25,Dinner,East Side (Taqueria),Tortilla,24,36,0,36,,VGN,0,1.5
+Corn Tortilla,3/9/25,Dinner,East Side (Taqueria),Tortilla,48,70,0,70,,VGN,0,1.458333333
+Corn Tortilla,3/14/25,Dinner,East Side (Taqueria),Tortilla,48,72,0,72,,VGN,0,1.5
+Corn Tortilla,3/17/25,Lunch,East Side (Taqueria),Tortilla,12,30,0,30,,VGN,0,2.5
+Corn Tortilla,3/17/25,Dinner,East Side (Taqueria),Tortilla,48,24,0,24,,VGN,0,0.5
+Corn Tortilla,3/18/25,Lunch,East Side (Taqueria),Tortilla,36,36,0,36,,VGN,0,1
+Corn Tortilla,3/31/25,Lunch,East Side (Taqueria),Tortilla,24,36,0,36,,VGN,0,1.5
+Corn Tortilla,4/16/25,Dinner,East Side (Taqueria),Tortilla,36,36,0,36,,VGN,0,1
+Corn Tortilla ,3/15/25,Dinner,East Side (Taqueria),Tortilla,48,72,0,72,,VGN,0,1.5
+Cranberry Orange Bread,3/18/25,Breakfast,Bakery,Slice,80,100,10,90,,VGT,0.1,1.25
+Cranberry Orange Muffin,1/7/25,Breakfast,Bakery,Muffin,72,97,44,53,,,0.4536082474,1.347222222
+Cream of Broccoli Soup,3/31/25,Lunch,Blue Plate Special,6 Oz Ladle,120,300,0,300,,VGT,0,2.5
+Cream Of Mushroom Soup,3/15/25,Dinner,Blue Plate Special,6 Oz Ladle,180,180,0,180,8:00,VGT,0,1
+Cream of Sweet Potato Soup,3/16/25,Dinner,Blue Plate Special,6 Oz Ladle,150,150,0,150,,VGT,0,1
+Cream of Tomato Soup,3/8/25,Dinner,Blue Plate Special,6 Oz Ladle,140,140,0,140,8:15 PM,VGT,0,1
+Cream Of Wheat,3/17/25,Breakfast,West Side (Cafe),1/2 Cup,35,35,0,35,,VGN,0,1
+Creole Beans and Rice,4/16/25,Dinner,Blue Plate Special,3/4 Cup,450,450,50,400,,VGN,0.1111111111,
+Crusty French Bread,2/21/25,Dinner,Bakery,Slice,220,220,0,220,,VGN,0,1
+Diced Potatoes with Onions,1/6/25,Breakfast,West Side (Cafe),1/2 Cup,460,460,0,460,,VGN,0,1
+Diced Potatoes with Onions,3/9/25,Brunch,West Side (Cafe),1/2 Cup,"1,000","1,000",0,"1,000",,VGN,0,1
+Dragon Noodles ,3/14/25,Dinner,Order Up,3/4 Cup,270,270,1,269,,VGN,0.003703703704,1
+Egg and Cheese Biscuit,4/17/25,Breakfast,West Side (Cafe),Sandwich,300,300,0,300,,VGT,0,
+Fettuccine Pasta ,3/15/25,Dinner,Order Up,1/3 Cup,720,760,3,757,,VGN,0.003947368421,1.055555556
+Fire Roasted Tomato Salsa,1/5/25,Dinner,East Side (Taqueria),3 Oz Ladle,96,96,0,96,,VGN,0,1
+Fire Roasted Tomato Salsa,1/7/25,Lunch,East Side (Taqueria),4 Oz Ladle,128,,,0,,VGN,#DIV/0!,
+Fish Cake,1/6/25,Lunch,Blue Plate Special,Cake,700,550,0,550,,,0,0.7857142857
+Fish Cake,3/5/25,Lunch,Blue Plate Special,Unit,650,560,100,460,,VGN,0.1785714286,0.8615384615
+Flour Tortilla,1/5/25,Dinner,East Side (Taqueria),Unit,12,30,0,30,,VGN,0,2.5
+Flour Tortilla,1/6/25,Dinner,East Side (Taqueria),Tortilla,24,40,,40,,VGN,0,1.666666667
+Flour Tortilla,1/7/25,Lunch,East Side (Taqueria),Tortilla,24,12,,12,,VGN,0,0.5
+Flour Tortilla,2/25/25,Dinner,East Side (Taqueria),Unit,80,80,0,80,,VGN,0,1
+Flour Tortilla,3/8/25,Dinner,East Side (Taqueria),Unit,24,36,0,36,,VGN,0,1.5
+Flour Tortilla,3/9/25,Dinner,East Side (Taqueria),Unit,48,60,0,60,,VGN,0,1.25
+Flour Tortilla,3/17/25,Lunch,East Side (Taqueria),Tortilla,12,24,0,24,,VGN,0,2
+Flour Tortilla,3/17/25,Dinner,East Side (Taqueria),Tortilla,48,48,0,48,,VGN,0,1
+Flour Tortilla,3/18/25,Lunch,East Side (Taqueria),Tortilla,48,60,0,60,,VGN,0,1.25
+Flour Tortilla,3/31/25,Lunch,East Side (Taqueria),Tortilla,24,40,0,40,,VGN,0,1.666666667
+Flour Tortilla,4/16/25,Dinner,East Side (Taqueria),Tortilla,80,80,0,80,,VGN,0,1
+Flour Tortilla ,3/14/25,Dinner,East Side (Taqueria),Tortilla,48,72,0,72,,VGN,0,1.5
+Flour Tortilla ,3/15/25,Dinner,East Side (Taqueria),Tortila,48,72,0,72,,VGN,0,1.5
+Four Bean Stew,3/14/25,Dinner,Blue Plate Special,6 Oz Ladle,360,360,0,360,,VGN,0,1
+French Cut Green Beans ,3/15/25,Dinner,Blue Plate Special,1/2 Cup,440,650,0,650,8:45,VGN,0,1.477272727
+French Peach Crumb Pie,3/8/25,Dinner,Bakery,Slice,380,380,100,280,,"VGN, Nuts",0.2631578947,1
+Fresh Broccoli Spears,3/16/25,Dinner,Blue Plate Special,1/2 Cup,520,550,0,550,,VGN,0,1.057692308
+Fresh Spinach with Garlic,4/17/25,Lunch,Blue Plate Special,1/2 Cup,240,60,0,60,,VGN,0,
+Fresh Vegetable Medley,3/9/25,Dinner,Blue Plate Special,1/2 Cup,350,350,0,350,8:45 PM,VGN,0,1
+Fruit Relish,3/5/25,Lunch,Blue Plate Special,1/2 Oz.,320,320,0,320,,VGN,0,1
+Garlic Mashed Red Potatoes,3/15/25,Dinner,Blue Plate Special,1/2 Cup,850,850,0,850,8:30,VGT,0,1
+Garlic Naan Bread,2/25/25,Dinner,Bakery,Naan (Piece?),600,600,0,600,,VGT,0,1
+German Apple Cake with Cream Cheese,3/16/25,Dinner,Bakery,Slice,450,384,0,384,,VGT,0,0.8533333333
+Grapefruit Halves,3/2/25,Brunch,Salads/Deli,Half,130,120,20,100,,VGN,0.1666666667,0.9230769231
+Grass Fed Burger,3/13/25,Dinner,West Side (Cafe),Burger,960,,,0,,,#DIV/0!,
+Grass Fed Burger,4/17/25,Lunch,West Side (Cafe),Burger,1200,1200,0,1200,2:20 PM,,0,
+Greek Salad,1/7/25,Breakfast,West Side (Cafe),1/2 Cup,240,400,,400,,,0,1.666666667
+Greek Salad,3/4/25,Lunch,Salads/Deli,1/2 Cup,330,500,0,500,,VGT,0,1.515151515
+Green Rice,1/5/25,Dinner,East Side (Taqueria),1/2 Cup,256,256,0,256,,VGN,0,1
+Grilled Cheese & Tomato on Wheat,1/6/25,Lunch,West Side (Cafe),1/2 Sandwich,180,180,0,180,,VGT,0,1
+Grilled Cheese & Tomato on Wheat,2/18/25,Lunch,West Side (Cafe),1/2 Sandwich,170,170,10,160,,,0.05882352941,1
+Grilled Cheese & Tomato on Wheat,3/18/25,Lunch,West Side (Cafe),1/2 Sandwich,170,170,10,160,,VGT,0.05882352941,1
+Grilled Jack on Sourdough,3/17/25,Lunch,West Side (Cafe),1/2 Sandwich,280,280,0,280,,VGT,0,1
+Grilled Jack on Sourdough,4/17/25,Lunch,West Side (Cafe),1/2 Sandwich,270,270,0,270,,VGT,0,
+Grilled Mozzarella & Basil on Sourdough,3/31/25,Lunch,West Side (Cafe),1/2 Sandwich,300,300,0,300,,VGT,0,1
+Grilled Swiss/bacon on Sourdough,3/9/25,Brunch,Blue Plate Special,1/2 Sandwich,460,400,0,400,,,0,0.8695652174
+Grilled Tomato Basil Mozz Sandwich,3/13/25,Dinner,West Side (Cafe),1/2 Sandwich,280,280,,280,,VGT,0,1
+Grilled Tuna Melt on Wheat,3/5/25,Lunch,West Side (Cafe),1/2 Sandwich,280,280,0,280,,,0,1
+Gumbo Soup,3/17/25,Lunch,Blue Plate Special,6 Oz Ladle,120,300,0,300,,VGN,0,2.5
+Ham and Pineapple Pizza,2/21/25,Dinner,Pizza,Slice,300,312,204,108,,,0.6538461538,1.04
+Ham and Pineapple Pizza,3/5/25,Lunch,Pizza,Slice,456,48,8,40,,,0.1666666667,0.1052631579
+Ham Pizza,2/23/25,Dinner,Pizza,Slice,12,12,0,12,,,0,1
+Hash Browns,1/7/25,Breakfast,West Side (Cafe),1/2 Cup,440,440,,440,,,0,1
+Hash Browns,3/18/25,Breakfast,West Side (Cafe),1/2 Cup,420,420,0,420,,VGN,0,1
+Hash Browns,4/17/25,Breakfast,West Side (Cafe),1/2 Cup,450,450,0,450,,VGN,0,
+Hawaiian Sweet Bread,2/24/25,Dinner,Bakery,Slice,144,150,0,150,,VGT,0,1.041666667
+Hawaiian Sweet Roll,1/6/25,Lunch,Bakery,Roll,108,130,0,130,,VGT,0,1.203703704
+Hawaiian Sweet Roll,3/17/25,Lunch,Bakery,Roll,84,120,19,101,,VGT,0.1583333333,1.428571429
+Herb Breadsticks,1/5/25,Dinner,Pizza,Slice,48,48,0,48,,VGN,0,1
+Herb Breadsticks,1/6/25,Lunch,Pizza,Slice,72,72,0,72,,VGN,0,1
+Herb Breadsticks,2/21/25,Dinner,Pizza,Slice,48,72,0,72,,VGN,0,1.5
+Herb Breadsticks,2/22/25,Dinner,Pizza,Slice,48,72,0,72,,VGN,0,1.5
+Herb Breadsticks,2/23/25,Dinner,Pizza,Slice,48,36,0,36,,VGN,0,0.75
+Herb Breadsticks,2/25/25,Dinner,Pizza,Slice,48,48,0,48,,VGT,0,1
+Herb Breadsticks,3/5/25,Lunch,Pizza,Slice,48,3,0,3,,VGN,0,0.0625
+Herb Breadsticks,3/6/25,Lunch,Pizza,Slice,48,3,0,3,2,VGN,0,0.0625
+Herb Breadsticks,3/7/25,Lunch,Pizza,Slice,48,3,0,3,4,VGN,0,0.0625
+Herb Breadsticks,3/8/25,Dinner,Pizza,Slice,48,96,0,96,,VGN,0,2
+Herb Breadsticks,3/8/25,Brunch,Pizza,Slice,48,48,20,28,,VGN,0.4166666667,1
+Herb Breadsticks,3/9/25,Brunch,Pizza,Slice,48,48,10,38,,VGN,0.2083333333,1
+Herb Breadsticks,3/14/25,Dinner,Pizza,Slice,48,72,0,72,,VGN,0,1.5
+Herb Breadsticks,3/15/25,Dinner,Pizza,Slice,48,96,0,96,,VGN,0,2
+Herb Breadsticks,3/15/25,Brunch,Pizza,Slice,48,48,12,36,,VGN,0.25,1
+Herb Breadsticks,3/17/25,Dinner,Pizza,Slice,48,48,0,48,,VGN,0,1
+Herb Breadsticks,3/17/25,Lunch,Pizza,Slice,48,3,0,3,,VGN,0,0.0625
+Herb Breadsticks,3/18/25,Lunch,Pizza,Slice,48,96,0,96,,VGN,0,2
+Herb Breadsticks,3/18/25,Dinner,Pizza,Slice,48,3,0,3,,VGN,0,0.0625
+Herb Breadsticks,4/16/25,Dinner,Pizza,Slice,48,72,6,66,,VGN,0.08333333333,1.5
+Herb Breadsticks,1/6/25,Dinner,Pizza,Slice,48,48,,48,,VGN,0,1
+Homemade Biscuit,3/31/25,Lunch,Bakery,Biscuit,168,280,0,280,,VGT,0,1.666666667
+Indian Bread Pudding,2/25/25,Dinner,Bakery,Piece,720,720,0,720,,"VGT, Nuts",0,1
+Indian Lentils with Long Grain Rice,2/25/25,Dinner,Blue Plate Special,1/2 Cup,400,400,0,400,,VGN,0,1
+Italian Fish Taco,3/14/25,Lunch,East Side (Taqueria),Taco,450,460,0,460,,,0,1.022222222
+Italian Sub,3/14/25,Lunch,Blue Plate Special,Slice,460,410,80,330,,,0.1951219512,0.8913043478
+Jasmine Rice ,3/14/25,Dinner,Blue Plate Special,1/2 Cup,400,400,0,400,,VGN,0,1
+Kale Caesar Salad,1/8/25,Dinner,Salads/Deli,1/2 Cup,380,360,0,360,,VGT,0,0.9473684211
+Krinkle Cut French Fries,3/17/25,Lunch,West Side (Cafe),Boat,1080,1080,0,1080,,VGN,0,1
+Krinkle Cut French Fries,4/17/25,Lunch,West Side (Cafe),Boat,960,1080,0,1080,,VGN,0,
+Lemon & Walnut Sponge Cake,4/16/25,Dinner,Bakery,Slice,640,380,110,270,,"VGT, Nuts",0.2894736842,
+Lemon Baked Ono,3/14/25,Dinner,Blue Plate Special,4 Oz,680,680,0,680,,,0,1
+Lemon Beurre Blanc,1/6/25,Lunch,Blue Plate Special,Oz,300,200,0,200,,VGT,0,0.6666666667
+Lemon Chicken Quarter,3/8/25,Dinner,Blue Plate Special,Quarter,900,900,200,700,8:45 PM,,0.2222222222,1
+Lemon Jello Cake,1/5/25,Dinner,Bakery,Slice,256,225,0,225,,,0,0.87890625
+Lemon Scone,3/8/25,Brunch,Bakery,Scone,300,288,72,216,,VGT,0.25,0.96
+Lemon Scone,3/15/25,Breakfast,Bakery,Scone,45,40,20,20,,,0.5,0.8888888889
+Lemon Scone,4/17/25,Breakfast,Bakery,Scone,156,150,25,125,,VGN,0.1666666667,
+Lemon Yogurt Muffin,1/6/25,Breakfast,Bakery,Muffin,132,140,40,100,,VGT,0.2857142857,1.060606061
+Lemon Yogurt Muffin,2/22/25,Brunch,Bakery,Muffin,420,455,162,293,,VGT,0.356043956,1.083333333
+Lemon Yogurt Muffin,3/31/25,Breakfast,Bakery,Muffin,156,160,60,100,,VGT,0.375,1.025641026
+Long Grain Rice,1/5/25,Dinner,Order Up,1/2 Cup,32,30,5,25,,VGN,0.1666666667,0.9375
+Long Grain Rice,2/22/25,Dinner,Order Up,1/2 Cup,32,60,3,57,,VGN,0.05,1.875
+Long Grain Rice,2/25/25,Lunch,Order Up,1/2 Cup,32,32,0,32,,VGN,0,1
+Long Grain Rice,3/8/25,Dinner,Order Up,1/2 Cup,32,32,1,31,,VGN,0.03125,1
+Long Grain Rice,3/9/25,Dinner,Order Up,1/2 Cup,48,48,3,45,,VGN,0.0625,1
+Long Grain Rice,3/14/25,Lunch,Order Up,1/2 Cup,32,32,2,30,,VGN,0.0625,1
+Long Grain Rice,3/14/25,Dinner,Order Up,1/2 Cup,48,48,3,45,,VGN,0.0625,1
+Long Grain Rice,3/17/25,Dinner,Order Up,1/2 Cup,48,48,4,44,,VGN,0.08333333333,1
+Long Grain Rice,3/18/25,Lunch,Order Up,1/2 Cup,32,32,2,30,,VGN,0.0625,1
+Long Grain Rice,3/18/25,Dinner,Order Up,1/2 Cup,32,40,3,37,,VGN,0.075,1.25
+Long Grain Rice ,3/15/25,Dinner,Order Up,1/2 Cup,32,48,3,45,,VGN,0.0625,1.5
+Mac and Cheese Pizza,3/6/25,Lunch,Pizza,Slice,444,40,3,37,8,VGT,0.075,0.09009009009
+Macaroni Salad,3/16/25,Dinner,Salads/Deli,1/2 Cup,80,80,0,80,,VGT,0,1
+Malibu Burger,1/6/25,Lunch,West Side (Cafe),Unit,40,40,10,30,,,0.25,1
+Malibu Burger,4/17/25,Lunch,West Side (Cafe),Burger,36,36,0,36,,VGN,0,
+Manhattan Clam Chowder,3/14/25,Lunch,Bakery,6 Oz Ladle,120,120,40,80,,,0.3333333333,1
+Manhattan Clam Chowder,3/18/25,Lunch,Blue Plate Special,6 Oz Ladle,40,30,0,30,,,0,0.75
+Marble Cake with Chocolate Icing,3/17/25,Dinner,Bakery,Slice,564,495,0,495,,VGT,0,0.8776595745
+Matzo Brei,4/17/25,Breakfast,West Side (Cafe),Piece,30,30,0,30,,VGT,0,
+Meat Sauce,3/8/25,Dinner,Order Up,3 Oz Ladle,620,620,6,614,,,0.009677419355,1
+Mexican Pizza,3/5/25,Lunch,Pizza,Slice,120,10,1,9,,VGN,0.1,0.08333333333
+Mexican Rice,3/9/25,Dinner,East Side (Taqueria),1/2 Cup,480,480,0,480,,VGN,0,1
+Mexican Rice,3/17/25,Dinner,East Side (Taqueria),1/2 Cup,512,512,0,512,,VGN,0,1
+Mexican Wedding Cookie,3/31/25,Lunch,Bakery,Cookie,300,300,140,160,,"VGN, Nuts",0.4666666667,1
+Minestrone Soup,1/6/25,Dinner,Blue Plate Special,6 Oz Ladle,240,240,40,200,,,0.1666666667,1
+Minestrone Soup,3/18/25,Dinner,Blue Plate Special,6 Oz Ladle,200,200,0,200,,VGN,0,1
+Mixed Vegetables,3/18/25,Lunch,Blue Plate Special,1/2 Cup,140,30,2,28,,VGN,0.06666666667,0.2142857143
+Multigatawny Soup,2/25/25,Dinner,Blue Plate Special,10 oz,350,350,150,200,,,0.4285714286,1
+Multigrain Waffle,1/6/25,Breakfast,West Side (Cafe),Unit,30,30,0,30,,VGT,0,1
+Multigrain Waffle,1/7/25,Breakfast,West Side (Cafe),Waffle,30,30,,30,,,0,1
+Multigrain Waffle,2/23/25,Brunch,West Side (Cafe),Unit,30,30,0,30,,,0,1
+Multigrain Waffle,3/9/25,Brunch,West Side (Cafe),Unit,35,35,0,35,,VGT,0,1
+Multigrain Waffle,3/17/25,Breakfast,West Side (Cafe),Waffle,25,25,0,25,,VGT,0,1
+Multigrain Waffle,3/18/25,Breakfast,West Side (Cafe),Waffle,30,30,0,30,,VGT,0,1
+Multigrain Waffle,4/17/25,Breakfast,West Side (Cafe),Waffle,25,25,0,25,,VGT,0,
+Mushroom Pizza,4/16/25,Dinner,Pizza,Slice,156,192,96,96,,VGT,0.5,1.230769231
+Oatmeal,1/6/25,Breakfast,West Side (Cafe),1/2 Cup,60,60,0,60,,VGN,0,1
+Oatmeal,2/23/25,Brunch,West Side (Cafe),1/2 Cup,180,180,0,180,,,0,1
+Oatmeal,3/9/25,Brunch,West Side (Cafe),1/2 Cup,140,140,0,140,,VGN,0,1
+Oatmeal Chocolate Chip Cookie,3/17/25,Lunch,Bakery,Cookie,760,760,144,616,,VGT,0.1894736842,1
+Oatmeal Raisin Walnut Cookie,1/7/25,Lunch,Bakery,Cookie,696,655,250,405,,VGT,0.3816793893,0.941091954
+Onion Walnut Bread,3/16/25,Dinner,Bakery,Slice,192,210,0,210,,VGT,0,1.09375
+Parmesan Herb Bread,2/22/25,Dinner,Bakery,Slice,160,160,0,160,,VGT,0,1
+Pasta Parmesan,3/16/25,Dinner,Salads/Deli,1/2 Cup,80,80,0,80,,VGT,0,1
+Pasta Pronto,2/25/25,Lunch,Order Up,3/4 Cup,150,150,20,130,,VGN,0.1333333333,1
+"Pasta with Herbs, Oil & Garlic",3/8/25,Dinner,Order Up,1/2 Cup,230,230,2,228,,VGN,0.008695652174,1
+Penne Pasta,3/17/25,Dinner,Order Up,1/3 Cup,700,700,2,698,,VGN,0.002857142857,1
+Penne with Chicken & Mushrooms,3/18/25,Lunch,Order Up,6 Oz,360,360,10,350,,,0.02777777778,1
+"Penne with Herbs, Olive Oil, Garlic",3/18/25,Lunch,Order Up,3/4 Cup,180,180,6,174,,VGN,0.03333333333,1
+Pepperoni Pizza,3/8/25,Dinner,Pizza,Slice,624,672,0,672,,,0,1.076923077
+Pepperoni Pizza,3/8/25,Brunch,Pizza,Slice,360,360,10,350,,,0.02777777778,1
+Pepperoni Pizza,3/17/25,Dinner,Pizza,Slice,684,792,0,792,8:35 PM,,0,1.157894737
+Pepperoni Pizza,3/17/25,Lunch,Pizza,Slice,684,600,0,600,,,0,0.8771929825
+Peruvian Ham Butifarra Sandwich,4/17/25,Lunch,Blue Plate Special,1/2 Sandwich,500,400,10,390,,,0.025,
+Pesto Cheese Pizza,1/5/25,Dinner,Pizza,Slice,312,252,0,252,,VGT,0,0.8076923077
+Pineapple Pizza,3/14/25,Dinner,Pizza,Slice,180,132,108,24,,VGT,0.8181818182,0.7333333333
+Pineapple Pizza,3/15/25,Brunch,Pizza,Slice,,96,4,92,,,0.04166666667,#DIV/0!
+Pineapple Upside Down Cake,3/15/25,Brunch,Bakery,Slice,495,315,130,185,,VGT,0.4126984127,0.6363636364
+Pinto Beans,1/6/25,Dinner,East Side (Taqueria),1/2 Cup,320,320,,320,,VGN,0,1
+Pinto Beans,3/17/25,Dinner,East Side (Taqueria),1/2 Cup,448,48,0,48,,VGN,0,0.1071428571
+Pinto Beans,3/31/25,Lunch,East Side (Taqueria),1/2 Cup,320,350,50,300,,VGN,0.1428571429,1.09375
+Pinto Beans,4/16/25,Dinner,East Side (Taqueria),1/2 Cup,352,352,0,352,,VGN,0,1
+Pizza Bread,3/8/25,Dinner,Bakery,Slice,176,176,0,176,,VGT,0,1
+Pork Chile Verde Tostada,1/5/25,Dinner,East Side (Taqueria),Unit,300,300,100,200,,,0.3333333333,1
+Pork Loin Roast,1/6/25,Dinner,Blue Plate Special,3 Oz,970,970,0,970,7:35 PM,,0,1
+Pork Stir Fry with Green beans,3/18/25,Dinner,Order Up,Cup,600,600,3,597,,,0.005,1
+Pork Sweet & Sour Stir Fry with Rice,3/9/25,Dinner,Order Up,7 Oz,700,680,2,678,,,0.002941176471,0.9714285714
+Pork Vindaloo,2/25/25,Dinner,East Side (Taqueria),6 Oz Ladle,650,650,0,650,8:15 PM,,0,1
+Potato Cheese Soup,3/17/25,Dinner,Blue Plate Special,6 Oz Ladle,220,220,0,220,,VGT,0,1
+Potato Chorizo Burrito,3/14/25,Dinner,East Side (Taqueria),Burrito,190,140,0,140,,VGN,0,0.7368421053
+Potato Vegetable Burrito,2/25/25,Dinner,East Side (Taqueria),Unit,300,250,0,250,,VGN,0,0.8333333333
+Potato Vegetable Soft Taco,3/31/25,Lunch,East Side (Taqueria),Taco,352,120,20,100,,VGN,0.1666666667,0.3409090909
+Pumpkin & Walnut Muffin,3/18/25,Breakfast,Bakery,Muffin,144,140,0,140,,VGT,0,0.9722222222
+Raspberry Swirl Coffee Cake,1/7/25,Breakfast,Bakery,Slice,180,225,90,135,,,0.4,1.25
+Refried Beans,1/5/25,Dinner,East Side (Taqueria),1/2 Cup,256,256,0,256,,VGN,0,1
+Refried Beans,2/25/25,Dinner,East Side (Taqueria),1/2 Cup,320,320,0,320,,VGN,0,1
+Refried Beans,3/8/25,Dinner,East Side (Taqueria),1/2 Cup,416,480,0,480,,VGN,0,1.153846154
+Refried Beans,3/14/25,Dinner,East Side (Taqueria),1/2 Cup,320,320,0,320,,VGN,0,1
+Refried Beans,3/15/25,Dinner,East Side (Taqueria),1/2 Cup,480,540,0,540,,VGN,0,1.125
+Refried Beans(?),3/17/25,Lunch,East Side (Taqueria),1/2 Cup,320,300,50,250,,VGN,0.1666666667,0.9375
+Rice Pilaf,3/8/25,Dinner,Blue Plate Special,1/2 Cup,400,400,100,300,8:45 PM,VGN,0.25,1
+Rice with Cilantro & Lime,3/17/25,Lunch,East Side (Taqueria),1/2 Cup,384,450,200,250,,VGN,0.4444444444,1.171875
+Rice with Cilantro & Lime,4/16/25,Dinner,East Side (Taqueria),1/2 Cup,416,416,0,416,,VGN,0,1
+Rice with Cilantro & Onions,3/18/25,Lunch,East Side (Taqueria),1/2 Cup,320,320,0,320,,,0,1
+Rice with Cilantro and Onions,1/6/25,Dinner,East Side (Taqueria),1/2 Cup,416,416,,416,,VGN,0,1
+Roast Beef,3/9/25,Dinner,Blue Plate Special,3 Oz,"1,200","1,200",300,900,8:45 PM,,0.25,1
+Roast Beef,3/17/25,Dinner,Blue Plate Special,3 Oz,1200,1200,0,1200,,,0,1
+Roasted Chile Negro Salsa,3/9/25,Dinner,East Side (Taqueria),5 Oz Ladle,128,128,0,128,,VGN,0,1
+Roasted Chile Negro Salsa,3/14/25,Dinner,East Side (Taqueria),6 Oz Ladle,128,90,0,90,,VGN,0,0.703125
+Roasted Chile Negro Salsa,3/18/25,Lunch,East Side (Taqueria),7 Oz Ladle,128,2,1,1,,VGN,0.5,0.015625
+Roasted Indian Cauliflower,2/22/25,Dinner,Blue Plate Special,1/2 Cup,580,580,0,580,,VGN,0,1
+Roasted Potato Halves,3/17/25,Dinner,Blue Plate Special,1/2 Cup,900,900,60,840,,VGN,0.06666666667,1
+Roasted Potato Wedges,3/9/25,Dinner,Blue Plate Special,1/2 Cup,900,900,300,600,8:45 PM,VGN,0.3333333333,1
+Roasted Potato Wedges,3/16/25,Dinner,Blue Plate Special,1/2 Cup,"1,000","1,000",0,"1,000",,VGN,0,1
+Roasted Tomato and Chile Salsa,1/6/25,Dinner,East Side (Taqueria),8 Oz Ladle,128,128,,128,,VGN,0,1
+Roasted Tomato and Chile Salsa,3/8/25,Dinner,East Side (Taqueria),9 Oz Ladle,128,90,0,90,,VGN,0,0.703125
+Roasted Tomato and Chile Salsa,3/17/25,Dinner,East Side (Taqueria),11 Oz Ladle,128,128,0,128,,VGN,0,1
+Roasted Tomato and Chile Salsa,3/17/25,Lunch,East Side (Taqueria),10 Oz Ladle,128,2,1,1,,VGN,0.5,0.015625
+Roasted Tomato and Chile Salsa,3/31/25,Lunch,East Side (Taqueria),12 Oz Ladle,128,2,1,1,,VGN,0.5,0.015625
+Roasted Vegetable Quesadilla,3/17/25,Dinner,East Side (Taqueria),Quesadilla,360,360,0,360,,VGT,0,1
+Roasted Vegetable Quesadilla,4/16/25,Dinner,East Side (Taqueria),Quesadilla,400,400,0,400,,VGT,0,1
+Rosemary Bread,1/6/25,Dinner,Bakery,Slice,96,120,,120,,VGT,0,1.25
+Rosemary Bread,3/18/25,Dinner,Bakery,Slice,192,240,200,40,,VGN,0.8333333333,1.25
+Salami Pizza,1/6/25,Lunch,Pizza,Slice,372,264,12,252,,,0.04545454545,0.7096774194
+Salami Pizza,1/6/25,Dinner,Pizza,Slice,360,300,,300,,,0,0.8333333333
+Salami Pizza,2/23/25,Dinner,Pizza,Slice,456,480,0,480,,,0,1.052631579
+Samosas with Curried Potatoes & Chutney,2/25/25,Dinner,Pizza,2 Samosas,640,608,0,608,6:30 PM,,0,0.95
+Sausage Link,1/6/25,Breakfast,West Side (Cafe),2 Links,300,360,0,360,,,0,1.2
+Sausage Link,3/9/25,Brunch,West Side (Cafe),2 Links,700,700,0,700,,,0,1
+Sausage Marinara Sauce,3/15/25,Dinner,Order Up,3 Oz Ladle,730,760,3,757,,,0.003947368421,1.04109589
+Sausage Pizza,1/5/25,Dinner,Pizza,Slice,300,524,0,524,,,0,1.746666667
+Sausage Pizza,4/16/25,Dinner,Pizza,Slice,432,456,24,432,,,0.05263157895,1.055555556
+Sauteed Spinach with onion & garlic,1/6/25,Lunch,Blue Plate Special,1/2 Cup,200,200,0,200,,,0,1
+Sauteed Spinach with Onion & Garlic,3/17/25,Lunch,Blue Plate Special,1/2 Cup,200,200,0,200,,VGN,0,1
+Sauteed Zucchini With Garlic ,3/14/25,Dinner,Blue Plate Special,1/2 Cup,320,320,20,300,,VGN,0.0625,1
+Savory Rice,3/18/25,Dinner,Blue Plate Special,1/2 Cup,460,460,60,400,,VGN,0.1304347826,1
+Scallops & Mushroom Pasta,3/14/25,Lunch,Order Up,6 Oz,380,380,5,375,,,0.01315789474,1
+Sesame Bread,4/16/25,Dinner,Bakery,Slice,192,180,60,120,,VGT,0.3333333333,
+Shoestring French Fries,2/18/25,Lunch,West Side (Cafe),Boat,960,960,0,960,,,0,1
+Shoestring French Fries,3/5/25,Lunch,West Side (Cafe),Boat,1080,1080,0,1080,,VGN,0,1
+Shoestring French Fries,3/31/25,Lunch,West Side (Cafe),Boat,840,840,0,840,,VGN,0,1
+Shoestring French Fries,3/18/25,Lunch,West Side (Cafe),Boat,960,960,0,960,,VGN,0,1
+Shredded Beef Tostada,3/17/25,Lunch,East Side (Taqueria),Tostada,270,280,30,250,,,0.1071428571,1.037037037
+Sliced Cantaloupe,3/2/25,Brunch,Salads/Deli,Slice,400,300,20,280,,VGN,0.06666666667,0.75
+Sliced Honeydew,3/2/25,Brunch,Salads/Deli,Slice,360,300,20,280,,VGN,0.06666666667,0.8333333333
+Sliced Papaya,3/2/25,Brunch,Salads/Deli,Slice,N/A,100,0,100,,VGN,0,#VALUE!
+Sliced Pineapple,3/2/25,Brunch,Salads/Deli,Slice,140,140,0,140,,VGN,0,1
+Sliced Potato with Onions,2/23/25,Brunch,West Side (Cafe),1/2 Cup,1100,1100,0,1100,,,0,1
+Sliced Potato with Onions,3/17/25,Breakfast,West Side (Cafe),1/2 Cup,420,420,0,420,,VGN,0,1
+Smooked Fish Fritters with Beet Vinaigrette,4/16/25,Dinner,Blue Plate Special,Fritter,380,380,7,373,,,0.01842105263,
+Sour Cream & Chive Roll,3/14/25,Lunch,Bakery,Roll,72,78,12,66,,VGT,0.1538461538,1.083333333
+Spaghetti Pasta,3/8/25,Dinner,Order Up,,620,620,4,616,,VGN,0.006451612903,1
+Spanish Rice,1/7/25,Lunch,East Side (Taqueria),1/2 Cup,384,450,,450,,VGN,0,1.171875
+Spanish Rice,2/25/25,Dinner,East Side (Taqueria),1/2 Cup,320,320,0,320,,VGN,0,1
+Spanish Rice,3/8/25,Dinner,East Side (Taqueria),1/2 Cup,416,320,0,320,,VGN,0,0.7692307692
+Spanish Rice,3/14/25,Dinner,East Side (Taqueria),1/2 Cup,448,480,0,480,,VGN,0,1.071428571
+Spanish Rice ,3/15/25,Dinner,East Side (Taqueria),1/2 Cup,512,800,0,800,,VGN,0,1.5625
+"Spicy Pepper, Sausage & Kale Pizza",3/18/25,Dinner,Pizza,Slice,420,40,6,34,,,0.15,0.09523809524
+"Spicy Pepper, Sausage & Kale Pizza",3/18/25,Lunch,Pizza,Slice,360,360,24,336,,,0.06666666667,1
+Spinach and Matzo Lasagna,4/17/25,Lunch,Blue Plate Special,4 Oz Piece,180,160,80,80,,Nuts,0.5,
+Spinach With Fresh Garlic & Ginger,4/16/25,Dinner,Blue Plate Special,1/2 Cup,400,400,80,320,,VGN,0.2,
+Split Pea Soup,3/9/25,Dinner,Blue Plate Special,6 Oz Ladle,120,120,20,100,8:45 PM,VGN,0.1666666667,1
+Steak Fries,1/6/25,Lunch,West Side (Cafe),Boat,1080,1080,0,1080,,VGN,0,1
+Steak Fries,3/13/25,Dinner,West Side (Cafe),Boat,1080,,,0,,VGN,#DIV/0!,
+Sticky Bun,2/23/25,Brunch,Bakery,Bun,450,450,45,405,,"VGT, Nuts",0.1,1
+Sticky Bun (with Nuts),2/26/25,Breakfast,Bakery,Unit,135,135,20,115,,"VGT, Nuts",0.1481481481,1
+Strawberry Muffin,3/19/25,Breakfast,Bakery,Muffin,144,70,0,70,,VGT,0,0.4861111111
+Sun Dried Tomato Sauce,3/15/25,Dinner,Order Up,3 Oz Ladle,200,200,1,199,,VGN,0.005,1
+Sweet & Sour Pot Roast,3/15/25,Dinner,Blue Plate Special,4 Oz,1300,1300,0,1300,7:15,,0,1
+Sweet & Sour Tofu Stir Fry,3/9/25,Dinner,Order Up,Cup,180,160,2,158,,VGN,0.0125,0.8888888889
+Swirled Herb Bread,1/5/25,Dinner,Bakery,Slice,128,80,0,80,,VGT,0,0.625
+Tabouli Salad,1/5/25,Dinner,Salads/Deli,1/2 Cup,120,140,10,130,,VGN,0.07142857143,1.166666667
+Tabouli Salad,3/5/25,Lunch,Salads/Deli,1/2 Cup,180,200,40,160,,VGN,0.2,1.111111111
+Taco Salad,1/8/25,Lunch,Salads/Deli,1/2 Cup,260,250,0,250,,VGT,0,0.9615384615
+Tandoori Style Baked Chicken,2/25/25,Dinner,Blue Plate Special,Quarter,1350,1450,150,1300,,,0.1034482759,1.074074074
+Teriyaki Chicken Stir Fry,2/22/25,Dinner,Order Up,Cup,750,600,2,598,,,0.003333333333,0.8
+Teriyaki Chicken Stir Fry,3/14/25,Dinner,Order Up,Cup,520,520,3,517,,,0.005769230769,1
+Teriyaki Vegetable Stir Fry,2/22/25,Dinner,Order Up,Cup,200,140,3,137,,VGN,0.02142857143,0.7
+Texas French Toast,3/9/25,Brunch,West Side (Cafe),Unit,760,760,0,760,,VGT,0,1
+Texas French Toast,3/18/25,Breakfast,West Side (Cafe),Piece,360,360,0,360,,VGT,0,1
+Thai Cucumber Salad,1/9/25,Lunch,Salads/Deli,1/2 Cup,260,250,0,250,,VGN,0,0.9615384615
+Three Bean Salad,1/7/25,Dinner,Salads/Deli,1/2 Cup,120,100,0,100,,VGN,0,0.8333333333
+Three Bean Salad,3/4/25,Dinner,Salads/Deli,1/2 Cup,100,80,10,70,,VGN,0.125,0.8
+Three Cheese Pizza,3/7/25,Lunch,Pizza,Slice,312,20,2,18,6,VGT,0.1,0.0641025641
+Three Cheese Pizza on Wheat,3/18/25,Dinner,Pizza,Slice,300,30,0,30,,VGT,0,0.1
+Three Cheese Pizza on Wheat,3/18/25,Lunch,Pizza,Slice,324,420,144,276,,VGT,0.3428571429,1.296296296
+Tofu Stir Fry,1/5/25,Dinner,Order Up,Cup,275,250,2,248,,VGN,0.008,0.9090909091
+Toll House Pie,3/14/25,Dinner,Bakery,Slice,520,550,0,550,,VGT,0,1.057692308
+Tomato Basil Pizza W/ White Sauce,3/15/25,Brunch,Pizza,Slice,324,276,4,272,,VGT,0.01449275362,0.8518518519
+Tomato Basil Pizza W/ White Sauce,3/15/25,Dinner,Pizza,Slice,428,444,22,422,,VGT,0.04954954955,1.037383178
+Tomato Pesto Pizza on Wheat Crust,2/25/25,Dinner,Pizza,Slice,396,444,168,276,,VGT,0.3783783784,1.121212121
+Tortilla Soup,3/5/25,Lunch,Blue Plate Special,6 Oz Ladle,190,9,4,5,,VGN,0.4444444444,0.04736842105
+Tortilla Soup,3/14/25,Dinner,Blue Plate Special,6 Oz Ladle,170,170,0,170,,VGN,0,1
+Tuna Wrap,3/17/25,Lunch,Blue Plate Special,1/2 Wrap,380,300,0,300,,,0,0.7894736842
+Turkey Sub Sandwich,2/23/25,Brunch,Blue Plate Special,Unit,549,500,20,480,,,0.04,0.9107468124
+Vegan Madras,2/25/25,Dinner,Order Up,6 Oz Ladle,300,320,3,317,,VGN,0.009375,1.066666667
+Vegetable & Jalapeno Pizza,2/21/25,Dinner,Pizza,Slice,132,108,72,36,,VGT,0.6666666667,0.8181818182
+Vegetable Beef Soup,4/17/25,Lunch,Blue Plate Special,6 Oz Ladle,120,120,20,100,,,0.1666666667,
+Vegetable Frittata,2/23/25,Brunch,West Side (Cafe),1/2 Cup,224,220,0,220,,,0,0.9821428571
+Vegetable Medley,3/18/25,Dinner,Blue Plate Special,1/2 Cup,360,360,0,360,,VGN,0,1
+Vegetable Pizza,3/9/25,Brunch,Pizza,Slice,216,156,6,150,,VGT,0.03846153846,0.7222222222
+Vegetable Pizza on Wheat,3/15/25,Dinner,Pizza,Slice,132,120,0,120,,VGT,0,0.9090909091
+Vegetable Rice Pilaf,3/17/25,Dinner,Blue Plate Special,1/2 Cup,420,420,20,400,,VGN,0.04761904762,1
+Vegetable Risotto,3/15/25,Dinner,Blue Plate Special,Cup,440,440,0,440,20:45,VGN,0,1
+Vegetable Soft Taco,3/8/25,Dinner,East Side (Taqueria),Unit,100,100,0,100,,VGN,0,1
+Vegetable Turnover,3/18/25,Dinner,Blue Plate Special,Turnover,400,400,0,400,,VGT,0,1
+Veggie Burger On Whole Wheat Bun,3/13/25,Dinner,West Side (Cafe),Burger,36,36,0,36,,VGN,0,1
+Veggie Burger on Whole Wheat Bun,3/17/25,Lunch,West Side (Cafe),Burger,36,25,0,25,,VGN,0,0.6944444444
+Veggie Jalapeno Pesto Pizza On Wheat,3/15/25,Brunch,Pizza,Slice,144,132,6,126,,VGT,0.04545454545,0.9166666667
+Veggie Medley,1/6/25,Dinner,Blue Plate Special,1/2 Cup,500,500,50,450,,,0.1,1
+Waffle,1/6/25,Breakfast,West Side (Cafe),Unit,120,120,0,120,,VGT,0,1
+Waffle,1/7/25,Breakfast,West Side (Cafe),Waffle,140,140,0,140,,,0,1
+Waffle,2/23/25,Brunch,West Side (Cafe),Unit,200,200,0,200,,,0,1
+Waffle,3/9/25,Brunch,West Side (Cafe),Unit,180,180,0,180,,VGT,0,1
+Waffle,3/17/25,Breakfast,West Side (Cafe),Waffle,110,110,0,110,,VGT,0,1
+Waffle,3/18/25,Breakfast,West Side (Cafe),Waffle,120,120,0,120,,VGT,0,1
+Waffle,4/17/25,Breakfast,West Side (Cafe),Waffle,100,100,0,100,,VGT,0,
+Wheat Germ Roll,1/7/25,Lunch,Bakery,Roll,72,84,30,54,,VGT,0.3571428571,1.166666667
+Wheat Tortilla,1/5/25,Dinner,East Side (Taqueria),Unit,12,12,0,12,,VGN,0,1
+Wheat Tortilla,1/6/25,Dinner,East Side (Taqueria),Tortilla,12,12,0,12,,VGN,0,1
+Wheat Tortilla,1/7/25,Lunch,East Side (Taqueria),Tortilla,12,12,0,12,,VGN,0,1
+Wheat Tortilla,2/25/25,Dinner,East Side (Taqueria),Unit,24,24,0,24,,VGN,0,1
+Wheat Tortilla,3/8/25,Dinner,East Side (Taqueria),Tortilla,12,6,0,6,,VGN,0,0.5
+Wheat Tortilla,3/9/25,Dinner,East Side (Taqueria),Unit,12,12,0,12,,VGN,0,1
+Wheat Tortilla,3/14/25,Dinner,East Side (Taqueria),Tortilla,12,6,0,6,,VGN,0,0.5
+Wheat Tortilla,3/15/25,Dinner,East Side (Taqueria),Tortilla,12,6,0,6,,VGN,0,0.5
+Wheat Tortilla,3/17/25,Dinner,East Side (Taqueria),Tortilla,24,24,0,24,,VGN,0,1
+Wheat Tortilla,3/17/25,Lunch,East Side (Taqueria),Tortilla,12,12,0,12,,VGN,0,1
+Wheat Tortilla,3/18/25,Lunch,East Side (Taqueria),Tortilla,24,12,0,12,,VGN,0,0.5
+Wheat Tortilla,3/31/25,Lunch,East Side (Taqueria),Tortilla,12,12,0,12,,VGN,0,1
+Wheat Tortilla,4/16/25,Dinner,East Side (Taqueria),Tortilla,24,24,0,24,,VGN,0,1
+Wheet Penne Primavera,3/17/25,Dinner,Order Up,3/4 Cup,150,120,2,118,,VGT,0.01666666667,0.8
+White & Wild Savory Rice,1/6/25,Dinner,Blue Plate Special,1/2 Cup,470,470,70,400,,VGN,0.1489361702,1
+White Bean Basque Soup,2/22/25,Brunch,Blue Plate Special,6 Oz Ladle,40,40,10,30,,VGN,0.25,1
+Whole Grain Rouni ,3/15/25,Dinner,Order Up,1/3 Cup,200,200,2,198,,VGN,0.01,1
+Whole Wheat Sunflower Roll,3/17/25,Dinner,Bakery,Roll,108,118,0,118,,VGT,0,1.092592593
+Wild Rice Blend,3/14/25,Lunch,Order Up,1/2 Cup,32,32,5,27,,VGN,0.15625,1
+Wild Rice Garden Salad,1/7/25,Breakfast,West Side (Cafe),1/2 Cup,90,120,20,100,,VGN,0.1666666667,1.333333333
+Wild Rice Garden Salad,3/2/25,Brunch,Salads/Deli,1/2 Cup,90,80,0,80,,VGN,0,0.8888888889
+Wild Rice Garden Salad,3/3/25,Dinner,Salads/Deli,1/2 Cup,100,110,0,110,,VGN,0,1.1
+Yeast Bread,3/14/25,Dinner,Bakery,Slice,96,100,50,50,,VGN,0.5,1.041666667
+Yellow Rice,3/31/25,Lunch,East Side (Taqueria),1/2 Cup,320,400,50,350,,VGN,0.125,1.25
+Zucchini & Crookneck Squash,2/23/25,Brunch,Blue Plate Special,1/2 Cup,110,90,10,80,,VGN,0.1111111111,0.8181818182
+,,,,,,,,0,,,#DIV/0!,
+,,,,,,,,0,,,#DIV/0!,
+,,,,,,,,0,,,#DIV/0!,
+,,,,,,,,0,,,#DIV/0!,
+,,,,,,,,0,,,#DIV/0!,
+,,,,,,,,0,,,#DIV/0!,
+,,,,,,,,0,,,#DIV/0!,
+,,,,,,,,0,,,#DIV/0!,
+,,,,,,,,0,,,#DIV/0!,
+,,,,,,,,0,,,#DIV/0!,
+,,,,,,,,0,,,#DIV/0!,
+,,,,,,,,0,,,#DIV/0!,
+,,,,,,,,0,,,#DIV/0!,
+,,,,,,,,0,,,#DIV/0!,
+,,,,,,,,0,,,#DIV/0!,
+,,,,,,,,0,,,#DIV/0!,
+,,,,,,,,0,,,#DIV/0!,
+,,,,,,,,0,,,#DIV/0!,
+,,,,,,,,0,,,#DIV/0!,
+,,,,,,,,0,,,#DIV/0!,
+,,,,,,,,0,,,#DIV/0!,
+,,,,,,,,0,,,#DIV/0!,
+,,,,,,,,0,,,#DIV/0!,
+,,,,,,,,0,,,#DIV/0!,
+,,,,,,,,0,,,#DIV/0!,
+,,,,,,,,0,,,#DIV/0!,
+,,,,,,,,0,,,#DIV/0!,
+,,,,,,,,0,,,#DIV/0!,
+,,,,,,,,0,,,#DIV/0!,
+,,,,,,,,0,,,#DIV/0!,
+,,,,,,,,0,,,#DIV/0!,
+,,,,,,,,0,,,#DIV/0!,
+,,,,,,,,0,,,#DIV/0!,
+,,,,,,,,0,,,#DIV/0!,
+,,,,,,,,0,,,#DIV/0!,
+,,,,,,,,0,,,#DIV/0!,
+,,,,,,,,0,,,#DIV/0!,
+,,,,,,,,0,,,#DIV/0!,
+,,,,,,,,0,,,#DIV/0!,
+,,,,,,,,0,,,#DIV/0!,
+,,,,,,,,0,,,#DIV/0!,
+,,,,,,,,0,,,#DIV/0!,
+,,,,,,,,0,,,#DIV/0!,
+,,,,,,,,0,,,#DIV/0!,
+,,,,,,,,0,,,#DIV/0!,
+,,,,,,,,0,,,#DIV/0!,
+,,,,,,,,0,,,#DIV/0!,
+,,,,,,,,0,,,#DIV/0!,
+,,,,,,,,0,,,#DIV/0!,
+,,,,,,,,0,,,#DIV/0!,
+,,,,,,,,0,,,#DIV/0!,
+,,,,,,,,0,,,#DIV/0!,
+,,,,,,,,0,,,#DIV/0!,
+,,,,,,,,0,,,#DIV/0!,
+,,,,,,,,0,,,#DIV/0!,
+,,,,,,,,0,,,#DIV/0!,
+,,,,,,,,0,,,#DIV/0!,
+,,,,,,,,0,,,#DIV/0!,
+,,,,,,,,0,,,#DIV/0!,
+,,,,,,,,0,,,#DIV/0!,
+,,,,,,,,0,,,#DIV/0!,
+,,,,,,,,0,,,#DIV/0!,
+,,,,,,,,0,,,#DIV/0!,
+,,,,,,,,0,,,#DIV/0!,
+,,,,,,,,0,,,#DIV/0!,
+,,,,,,,,0,,,#DIV/0!,
+,,,,,,,,0,,,#DIV/0!,
+,,,,,,,,0,,,#DIV/0!,
+,,,,,,,,0,,,#DIV/0!,
+,,,,,,,,0,,,#DIV/0!,
+,,,,,,,,0,,,#DIV/0!,
+,,,,,,,,0,,,#DIV/0!,
+,,,,,,,,0,,,#DIV/0!,
+,,,,,,,,0,,,#DIV/0!,
+,,,,,,,,0,,,#DIV/0!,
+,,,,,,,,0,,,#DIV/0!,
+,,,,,,,,0,,,#DIV/0!,
+,,,,,,,,0,,,#DIV/0!,
+,,,,,,,,0,,,#DIV/0!,
+,,,,,,,,0,,,#DIV/0!,
+,,,,,,,,0,,,#DIV/0!,
+,,,,,,,,0,,,#DIV/0!,
+,,,,,,,,0,,,#DIV/0!,
+,,,,,,,,0,,,#DIV/0!,
+,,,,,,,,0,,,#DIV/0!,

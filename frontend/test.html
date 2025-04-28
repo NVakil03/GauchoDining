@@ -22,7 +22,9 @@
 
         h1 {
             color: #fff;
-            font-size: 4rem;
+            font-size: 3rem;
+            margin-top: -5px;
+
         }
 
         h2 {
@@ -56,6 +58,7 @@
             display: block;
         }
 
+
         .selectCommon {
             padding: 10px;
             margin: 10px;
@@ -84,10 +87,8 @@
             border-radius: 10px;
         }
 
-        .modal-content p,
-        label,
-        button,
-        h3 {
+        .modal-content label,
+        button {
             font-size: 2rem;
         }
 
@@ -98,6 +99,8 @@
             left: 0;
             width: 100%;
             padding: 1.1rem;
+            height: 5vh;
+
         }
 
         .top {
@@ -149,14 +152,18 @@
             object-fit: cover;
         }
 
-        button {
-            display: block;
-            width: 30rem;
-            padding: 2rem;
+        .recStylep,
+        h3 {
+            font-size: 1rem;
+            /* smaller than normal */
+            margin: 4px 0;
+            /* a little space between lines */
+            color: #555;
+            /* optional: softer gray color */
+        }
+
+        h4 {
             font-size: 2rem;
-            border-radius: 10px;
-            color: white;
-            background-color: #003660;
         }
     </style>
 </head>
@@ -164,57 +171,360 @@
 <body>
     <nav>
         <h1>Gaucho Dining</h1>
-
+        <div id="user-icon" class="user-icon">
+            <img id="user-avatar" src="" alt="User Avatar" />
+        </div>
     </nav>
     <div class="top">
         <h2 id="meal-title"></h2>
     </div>
     <div id="Options">
-        <p id="instruction">Please log in</p> <br> <br>
-        <button id="login-btn">Sign in with Google</button>
+        <p id="instruction">Please select a location</p>
+        <div class="buttons">
+            <button class="selectCommon" onclick="setDiningCommon('portola', 'Portola')">Portola</button>
+            <button class="selectCommon" onclick="setDiningCommon('de-la-guerra', 'De La Guerra')">De La Guerra</button>
+            <button class="selectCommon" onclick="setDiningCommon('carrillo', 'Carrillo')">Carrillo</button>
+        </div>
     </div>
-
+    <div class="selectedloc">
+        <div class="selectedloc">
+            <div class="img"></div>
+            <iframe src="" frameborder="0" class="img" style="border-radius: 10px;"></iframe>
+        </div>
+    </div>
     <div id="menu" class="menu"></div>
+
+
+    <div id="ratingModal" style="display:none;" class="modal">
+        <div class="modal-content">
+            <span id="closeModal" style="cursor:pointer; font-size: 4rem;">&times;</span>
+            <div id="foodTitle">Rate this food</div>
+            <label for="rating" style="padding: 20px; display: block;">Rating (1-5):</label>
+            <div id="rating-buttons">
+                <button class="rate-btn" data-value="1">1</button>
+                <button class="rate-btn" data-value="2">2</button>
+                <button class="rate-btn" data-value="3">3</button>
+                <button class="rate-btn" data-value="4">4</button>
+                <button class="rate-btn" data-value="5">5</button>
+            </div>
+
+            <label for="comment" style="padding: 20px; display: block;">Comment:</label><br>
+            <textarea id="comment" rows="4" cols="30"></textarea><br><br>
+            <p class="message"></p><br>
+            <button onclick="submitRating()">Submit</button>
+            <div id="foodRecs"></div>
+            <div id="foodStats" style="margin-top: 1em; display: block;"></div>
+        </div>
     </div>
-</body>
 
-<script type="module">
-    // Importing supabase client
-    import { createClient } from 'https://cdn.jsdelivr.net/npm/@supabase/supabase-js/+esm';
-
-    // Define your Supabase credentials
-    const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Ind5cXRwb29nZ3lnaXZkcWZycnBrIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDUwMjE2OTksImV4cCI6MjA2MDU5NzY5OX0.1bdEUFYA6PNiWoCT8GEJZooux8Pwf-G9pmKpU--RLiE'
-    const supabaseUrl = 'https://wyqtpooggygivdqfrrpk.supabase.co'
-    const supabase = createClient(supabaseUrl, SUPABASE_KEY);
+    <script type="module">
+        import { createClient } from 'https://cdn.jsdelivr.net/npm/@supabase/supabase-js/+esm'
 
 
-    // Global login function
-    async function login() {
-        const { data, error } = await supabase.auth.signInWithOAuth({
-            provider: 'google',
-            options: {
-                redirectTo: 'https://gaucho-dining.vercel.app/', // Full URL to redirect after login
+
+        const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Ind5cXRwb29nZ3lnaXZkcWZycnBrIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDUwMjE2OTksImV4cCI6MjA2MDU5NzY5OX0.1bdEUFYA6PNiWoCT8GEJZooux8Pwf-G9pmKpU--RLiE'
+        const supabaseUrl = 'https://wyqtpooggygivdqfrrpk.supabase.co'
+        const supabase = createClient(supabaseUrl, SUPABASE_KEY);
+
+
+
+        let diningCommon;
+        window.setDiningCommon = function (loc, name) {
+            diningCommon = loc;
+            document.getElementById("instruction").innerHTML = name + " Selected. Click on Item for More Info.";
+            fetchMenu();
+            const imgDiv = document.querySelector(".img");
+            const iframe = document.querySelector("iframe");
+
+            let imgSrc = "";
+            let mapSrc = "";
+
+            if (loc === 'portola') {
+                imgSrc = "img/portola.jpg";
+                mapSrc = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3291.3558132816443!2d-119.86968342412472!3d34.417716073021566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80e93f59b0ae06c1%3A0x83cae6e56c7e3737!2sPortola%20Dining%20Commons!5e0!3m2!1sen!2sus!4v1745551258995!5m2!1sen!2sus";
+            } else if (loc === 'de-la-guerra') {
+                imgSrc = "img/delaguerra.jpg";
+                mapSrc = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3291.678012010242!2d-119.84785772412508!3d34.40952917302456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80e93f72f5d402c3%3A0x7c78751d92f632bc!2sDe%20La%20Guerra%20Dining%20Commons!5e0!3m2!1sen!2sus!4v1745551677690!5m2!1sen!2sus";
+            } else if (loc === 'carrillo') {
+                imgSrc = "img/carrillo.jpg";
+                mapSrc = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3291.6614607664014!2d-119.85569692412508!3d34.4099497730243!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80e93f6bff47ea07%3A0x46b1087666350078!2sCarrillo%20Dining%20Commons!5e0!3m2!1sen!2sus!4v1745551377680!5m2!1sen!2sus";
             }
-        })
 
+            imgDiv.innerHTML = `<img src="${imgSrc}" alt="${name}" style="max-width:100%; height:auto; border-radius: 10px;">`;
+            iframe.src = mapSrc;
+        };
+        // Meal time logic
+        function getCurrentMeal() {
+            const dayOfWeek = new Date().getDay(); // 0 = Sunday, 6 = Saturday
 
-        if (error) {
-            alert('Login failed: ' + error.message);
-        } else {
-            console.log(data); // You can log user info here, or redirect to another page
+            if (dayOfWeek === 0 || dayOfWeek === 6) {
+                return WkndgetMealTime();
+            } else {
+                return WkDaygetMealTime();
+            }
         }
-    }
 
-    // Add event listener for the login button
-    document.getElementById('login-btn').addEventListener('click', login);
-
-    // Optional: auto-redirect if already logged in
-    supabase.auth.getSession().then(({ data: { session } }) => {
-        if (session) {
-            window.location.href = "https://gaucho-dining.vercel.app/"; // Or any URL you want to redirect to
+        function WkDaygetMealTime() {
+            const now = new Date();
+            const hour = now.getHours();
+            if (hour < 10) {
+                return "Breakfast"; // 12:00am - 10:00am
+            } else if (hour < 15) {
+                return "Lunch"; // 11:00am - 3:00pm
+            } else if (hour < 24) {
+                return "Dinner"; // 3:01pm - 9:00pm
+            } else {
+                return "GO TO SLEEP~"; // Outside meal times
+            }
         }
-    });
-</script>
+
+        function WkndgetMealTime() {
+            const now = new Date();
+            const hour = now.getHours();
+            console.log(now)
+            if (hour < 14) {
+                return "Brunch"; // 12:00am - 1:59pm
+            } else if (hour < 24) {
+                return "Dinner"; // 2:00pm and after
+            }
+            else {
+                return "GO TO SLEEP~";
+            }
+        }
+
+
+
+        // Display time
+        const now = new Date();
+        /* document.getElementById("time").textContent =
+            "Current time: " + now.toLocaleTimeString();
+ */
+        function getMMDDYYYY() {
+            const n = new Date();
+            let months = ["Jan", "Feb", "March", "Apr", "May", "June", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+            return months[now.getMonth()] + " " + now.getDate() + " " + now.getFullYear();
+        }
+        document.getElementById("meal-title").innerHTML = getMMDDYYYY() + " " + getCurrentMeal() + " Menu";
+
+        function getTime() {
+            const n = new Date();
+            const ampm = n.getHours() >= 12 ? " pm" : " am";
+            return n.getHours() % 12 + ": " + n.getMinutes() + ampm
+
+        }
+
+        let currentFood = "";
+        let selectedRating = null;
+        const rating = selectedRating;
+        function foodWindow(foodName) {
+            console.log(foodName);
+            currentFood = foodName;
+            document.getElementById("foodTitle").textContent = `${foodName}`;
+            document.getElementById("ratingModal").style.display = "block";
+            window.loadFoodRecs(foodName, diningCommon);
+            window.loadFoodStats(foodName);
+        }
+
+        document.getElementById("closeModal").onclick = function () {
+            document.getElementById("comment").value = "";
+            document.querySelector(".message").textContent = "";
+            document.querySelectorAll('.rate-btn').forEach(b => b.classList.remove('selected'));
+            selectedRating = null;
+
+            document.getElementById("ratingModal").style.display = "none";
+            document.getElementById("foodRecs").innerHTML = "";
+        };
+
+        window.loadFoodRecs = async function (foodName, diningCommon) {
+            const { data: recommendations, error } = await supabase
+                .from(diningCommon)
+                .select('*')
+                .eq('food_name', foodName);
+            let recsHtml = "";
+            if (error) {
+                recsHtml += `<h3 class="recStylep"> Error getting recommendations...</h3>`;
+                document.getElementById("foodRecs").innerHTML = recsHtml;
+                return;
+            }
+            if (!recommendations || recommendations.length === 0) {
+                recsHtml += `<h3 class="recStylep"> No recommendations...</h3>`;
+                document.getElementById("foodRecs").innerHTML = recsHtml;
+                return;
+            }
+
+            recsHtml += `<h3 class="recStylep"> Recommendations: </h3>`;
+            recsHtml += `<p class="recStylep">${recommendations[0].rec1} - "${recommendations[0].rec1_loc}"</p>`;
+            recsHtml += `<p class="recStylep">${recommendations[0].rec2} - "${recommendations[0].rec2_loc}"</p>`;
+            recsHtml += `<p class="recStylep">${recommendations[0].rec3} - "${recommendations[0].rec3_loc}"</p>`;
+            recsHtml += `<p class="recStylep">${recommendations[0].rec4} - "${recommendations[0].rec4_loc}"</p>`; //{review.day} ${review.time}           
+            document.getElementById("foodRecs").innerHTML = recsHtml;
+
+        }
+
+        window.loadFoodStats = async function (foodName) {
+
+            // Get all reviews for the food
+            const { data: reviews, error } = await supabase
+                .from('reviews')
+                .select('*')
+                .eq('food', foodName);
+
+            if (error) {
+                console.error("Error loading stats:", error);
+                return;
+            }
+
+            if (reviews.length === 0) {
+                document.getElementById("foodStats").innerHTML = "No reviews yet.";
+                document.getElementById("foodTitle").innerHTML = `<h4 style="font-size: 2rem;"> ${foodName}</h4>`;
+                return;
+            }
+
+            // Calculate average rating
+            const avg = (reviews.reduce((sum, r) => sum + r.rating, 0) / reviews.length).toFixed(1);
+
+            // Pick a random review
+            const shuffledReviews = reviews.sort(() => 0.5 - Math.random()).slice(0, 5);
+
+            document.getElementById("foodTitle").innerHTML = `<h4 style="font-size: 2rem;"> ${foodName}: ${avg} ❤︎ (${reviews.length} reviews)</h4>`;
+            // Display
+            let reviewsHtml = "";
+            shuffledReviews.forEach(review => {
+                reviewsHtml += `<p>${review.day} "${review.comment}" - ${review.rating}❤ </p>`; //{review.day} ${review.time}           
+            });
+
+            // Display
+            document.getElementById("foodStats").innerHTML = `
+        <p>${avg}❤︎ ${reviews.length} reviews</p>
+        <br>
+        <p><strong>Random Reviews:</strong></p>
+        ${reviewsHtml}
+    `;
+
+        };
+
+
+        window.submitRating = async function () {
+
+            const rating = selectedRating;
+            const comment = document.getElementById("comment").value;
+            if (!rating || rating > 5 || rating < 1) {
+                showMessage("Please select a rating.", true);
+            }
+
+            if (!rating || !comment) {
+                showMessage("Please make sure both rating and comment are filled in.");
+                return;
+            }
+
+            const { data, error } = await supabase
+                .from('reviews')
+                .insert([
+                    {
+                        food: currentFood,
+                        rating: parseInt(rating),
+                        comment: comment,
+                        day: getMMDDYYYY(),
+                        time: getTime(),
+                        user_id: user.id
+                    }
+                ])
+                .select()
+
+            if (error) {
+                console.error("Error submitting rating:", error);
+                messageBox("Submission failed.");
+            } else {
+                console.log("Submitted:", data);
+                showMessage("Rating submitted!");
+                loadFoodStats(currentFood);
+
+            }
+
+            console.log(currentFood, rating, comment);
+
+
+            document.getElementById("comment").value = "";
+            document.querySelectorAll('.rate-btn').forEach(b => b.classList.remove('selected'));
+            selectedRating = null;
+        }
+
+
+        window.fetchMenu = function () {
+            if (!diningCommon) return;
+
+            const now = new Date();
+            const date = now.toLocaleDateString('en-CA').split("T")[0];
+            const meal = getCurrentMeal();
+
+            if (!meal) {
+                document.getElementById("menu").innerHTML = "No meal service right now.";
+                return;
+            }
+
+            const url = `https://api.ucsb.edu/dining/menu/v1/${date}/${diningCommon}/${meal}`;
+
+/*             const url = `https://api.ucsb.edu/dining/menu/v1/2025-04-18/portola/lunch`; //tester
+ */            const headers = {
+                "accept": "application/json",
+                "ucsb-api-key": "msK15c7pUiSOGRQXmpW7w4zW6GrldYht"
+            };
+
+            fetch(url, { headers })
+                .then(res => res.json())
+                .then(data => {
+                    const menuDiv = document.getElementById("menu");
+                    menuDiv.innerHTML = ""; // clear previous
+
+                    const menuByStation = {};
+                    data.forEach(item => {
+                        const station = item.station;
+                        if (!menuByStation[station]) menuByStation[station] = [];
+                        menuByStation[station].push(item.name);
+                    });
+
+                    for (const station in menuByStation) {
+                        const section = document.createElement("div");
+                        section.className = "station";
+                        const title = document.createElement("h3");
+                        title.textContent = station;
+                        section.appendChild(title);
+
+                        const list = document.createElement("ul");
+                        menuByStation[station].forEach(entree => {
+                            const li = document.createElement("li");
+                            li.className = "foodItem";
+                            li.onclick = () => foodWindow(entree);
+                            li.textContent = entree;
+                            list.appendChild(li);
+                        });
+
+                        section.appendChild(list);
+                        menuDiv.appendChild(section);
+                    }
+                })
+                .catch(err => {
+                    document.getElementById("menu").innerHTML = "Failed to load menu: " + err;
+                });
+
+
+            document.querySelectorAll('.rate-btn').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    // Deselect all buttons
+                    document.querySelectorAll('.rate-btn').forEach(b => b.classList.remove('selected'));
+
+                    // Select current button
+                    btn.classList.add('selected');
+                    selectedRating = parseInt(btn.dataset.value);
+                });
+            });
+        }
+        function showMessage(text, isError = false) {
+            const messageBox = document.querySelector(".message");
+            messageBox.textContent = text;
+            messageBox.style.color = isError ? "red" : "green";
+        }
+    </script>
 </body>
 
 </html>

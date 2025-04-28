@@ -141,8 +141,8 @@
             position: fixed;
             top: 1rem;
             right: 1rem;
-            width: 80px;
-            height: 80px;
+            width: 3rem;
+            height: 3rem;
             border-radius: 50%;
             overflow: hidden;
         }
@@ -198,7 +198,7 @@
             <label for="comment" style="padding: 20px; display: block;">Comment:</label><br>
             <textarea id="comment" rows="4" cols="30"></textarea><br><br>
             <p class="message"></p><br>
-
+            <div id="foodRecs"></div>
             <button onclick="submitRating()">Submit</button>
             <div id="foodStats" style="margin-top: 1em; display: block;"></div>
         </div>
@@ -327,6 +327,7 @@
             currentFood = foodName;
             document.getElementById("foodTitle").textContent = `${foodName}`;
             document.getElementById("ratingModal").style.display = "block";
+            window.loadFoodRecs(foodName, diningCommon);
             window.loadFoodStats(foodName);
         }
 
@@ -337,8 +338,34 @@
             selectedRating = null;
 
             document.getElementById("ratingModal").style.display = "none";
+            document.getElementById("foodRecs").innerHTML = "";
         };
 
+        window.loadFoodRecs = async function (foodName, diningCommon) {
+            const { data: recommendations, error } = await supabase
+                .from(diningCommon)
+                .select('*')
+                .eq('food_name', foodName);
+            let recsHtml = "";
+            if (error) {
+                recsHtml += `<h3 class="recStylep"> Error getting recommendations...</h3>`;
+                document.getElementById("foodRecs").innerHTML = recsHtml;
+                return;
+            }
+            if (!recommendations || recommendations.length === 0) {
+                recsHtml += `<h3 class="recStylep"> No recommendations...</h3>`;
+                document.getElementById("foodRecs").innerHTML = recsHtml;
+                return;
+            }
+
+            recsHtml += `<h3 class="recStylep"> Recommendations: </h3>`;
+            recsHtml += `<p class="recStylep">${recommendations[0].rec1} - "${recommendations[0].rec1_loc}"</p>`;
+            recsHtml += `<p class="recStylep">${recommendations[0].rec2} - "${recommendations[0].rec2_loc}"</p>`;
+            recsHtml += `<p class="recStylep">${recommendations[0].rec3} - "${recommendations[0].rec3_loc}"</p>`;
+            recsHtml += `<p class="recStylep">${recommendations[0].rec4} - "${recommendations[0].rec4_loc}"</p>`; //{review.day} ${review.time}           
+            document.getElementById("foodRecs").innerHTML = recsHtml;
+
+        }
 
         window.loadFoodStats = async function (foodName) {
 
@@ -355,6 +382,7 @@
 
             if (reviews.length === 0) {
                 document.getElementById("foodStats").innerHTML = "No reviews yet.";
+                document.getElementById("foodTitle").innerHTML = `<h4 style="font-size: 2rem;"> ${foodName}</h4>`;
                 return;
             }
 
@@ -364,19 +392,19 @@
             // Pick a random review
             const shuffledReviews = reviews.sort(() => 0.5 - Math.random()).slice(0, 5);
 
+            document.getElementById("foodTitle").innerHTML = `<h4 style="font-size: 2rem;"> ${foodName}: ${avg} ❤︎ (${reviews.length} reviews)</h4>`;
             // Display
             let reviewsHtml = "";
             shuffledReviews.forEach(review => {
-                reviewsHtml += `<p>${review.day} "${review.comment}" - ❤︎(${review.rating})</p>`; //{review.day} ${review.time}           
+                reviewsHtml += `<p>${review.day} "${review.comment}" - ${review.rating} ❤ </p>`; //{review.day} ${review.time}           
             });
 
             // Display
             document.getElementById("foodStats").innerHTML = `
-        <p>${avg} ❤︎ (${reviews.length} reviews)</p>
-        <br>
         <p><strong>Random Reviews:</strong></p>
         ${reviewsHtml}
     `;
+
         };
 
 

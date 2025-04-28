@@ -3,12 +3,18 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>UCSB Dining Menu</title>
+    <meta name="author" content="Katie Pyo">
+    <meta name="description" content="The official website for Gaucho-Dining">
+    <title>Gaucho-Dining</title>
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
     <style>
-        *,
         html {
-            width: 95%;
+            width: 80%;
             margin: 0 auto;
+        }
+
+        * {
+            width: 100%;
         }
 
         #Options p {
@@ -38,6 +44,8 @@
 
         ul {
             list-style: none;
+            width: 60vw;
+
         }
 
         ul li {
@@ -57,6 +65,7 @@
         .menu {
             display: block;
         }
+
 
         .selectCommon {
             padding: 10px;
@@ -86,10 +95,8 @@
             border-radius: 10px;
         }
 
-        .modal-content p,
-        label,
-        button,
-        h3 {
+        .modal-content label,
+        button {
             font-size: 2rem;
         }
 
@@ -151,6 +158,20 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
+        }
+
+        .recStylep,
+        h3 {
+            font-size: 1rem;
+            /* smaller than normal */
+            margin: 4px 0;
+            /* a little space between lines */
+            color: #555;
+            /* optional: softer gray color */
+        }
+
+        h4 {
+            font-size: 2rem;
         }
     </style>
 </head>

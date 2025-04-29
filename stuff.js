@@ -1,5 +1,5 @@
 async function loadMealsLastTwoWeeks() {
-    const diningCommons = ['de-la-guerra'];
+    const diningCommons = ['carrillo'];
     const today = new Date();
     const headers = {
         "accept": "application/json",
@@ -8,9 +8,9 @@ async function loadMealsLastTwoWeeks() {
 
     console.log("Name,Station\n");
 
-    for (let i = 26; i >= 12; i--) {
+    for (let i = 0; i <= 14; i++) {
         const tempDate = new Date(today);
-        tempDate.setDate(today.getDate() - (today.getDate() - i));
+        tempDate.setDate(today.getDate() + i);
         const dateStr = tempDate.toISOString().split('T')[0];
 
         const dayOfWeek = tempDate.getDay();
@@ -35,7 +35,7 @@ async function loadMealsLastTwoWeeks() {
                     }));
 
                     items.forEach(item => {
-                        console.log(`${item.name}`);
+                        console.log(`${item.station}`);
                     });
                 } catch (error) {
                     console.error(`❌ Failed to load ${dateStr} ${diningCommon} ${meal}`, error);

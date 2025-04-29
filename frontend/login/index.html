@@ -119,6 +119,17 @@
             width: 400px;
             height: auto;
         }
+
+        .bar {
+            display: flex;
+            padding: 30px;
+            gap: 30px;
+        }
+
+        .bar:nth-child(2n) {
+            background-color: #00366023;
+            border-radius: 10px;
+        }
     </style>
 </head>
 
@@ -131,14 +142,27 @@
         <h2 id="meal-title"></h2>
     </div>
     <div id="Options">
-        <p id="instruction">Welcome to Gaucho Dining |BETA|</p>
-        <p>See the Dining Hall Menu...</p>
-        <img src="../img/menu.png">
-        <p>Hear what others think...</p>
-        <img src="../img/review.png">
-        <p>Leave your opinion!</p>
-        <img src="../img/rating.png">
-        <p id="instruction">Log in to get started!</p> <br> <br>
+        <h2 id="instruction">Welcome to Gaucho Dining |BETA|</h2>
+        <br>
+        <div class="bar">
+            <p>Select a location...</p>
+            <img src="../img/home.png">
+        </div>
+        <div class="bar">
+            <img src="../img/menu.png">
+            <p>See the dining hall menu...</p>
+        </div>
+        <div class="bar">
+            <p>Browse recommendations and hear what others think...</p>
+            <img src="../img/review.png">
+        </div>
+        <div class="bar">
+            <img src="../img/rating.png">
+
+            <p>Leave your opinion!</p>
+        </div>
+        <br>
+        <h2 id="instruction">Log in to get started!</h2> <br> <br>
     </div>
 
     <div id="menu" class="menu"></div>

@@ -116,8 +116,19 @@
         }
 
         img {
-            width: 400px;
             height: auto;
+            width: 40vw;
+
+        }
+
+        #Options .icon {
+            width: 100px;
+            height: auto;
+        }
+
+        .inline {
+            display: flex;
+            padding: 10px;
         }
 
         .bar {
@@ -142,8 +153,10 @@
         <h2 id="meal-title"></h2>
     </div>
     <div id="Options">
-        <h2 id="instruction">Welcome to Gaucho Dining |BETA|</h2>
-        <br>
+        <div class="inline">
+            <h2 id="instruction">Welcome to Gaucho Dining</h2>
+            <img src="/frontend/img/icon.png" class="icon">
+        </div>
         <div class="bar">
             <p>Select a location...</p>
             <img src="../img/home.png">

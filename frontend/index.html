@@ -196,6 +196,7 @@
     </div>
     <div id="Options">
         <p id="instruction">Please select a location</p>
+        <p id="funFact"></p>
         <div class="buttons">
             <button class="selectCommon" onclick="setDiningCommon('portola', 'Portola')">Portola</button>
             <button class="selectCommon" onclick="setDiningCommon('de-la-guerra', 'De La Guerra')">De La Guerra</button>
@@ -270,6 +271,12 @@
             fetchMenu();
             const imgDiv = document.querySelector(".img");
             const iframe = document.querySelector("iframe");
+            if (diningCommon == 'de-la-guerra') {
+                document.getElementById("funFact").innerHTML = "Did you know that 5.54% of untouched food at DLG gets tossed?";
+            }
+            else {
+                document.getElementById("funFact").innerHTML = "";
+            }
 
             let imgSrc = "";
             let mapSrc = "";
